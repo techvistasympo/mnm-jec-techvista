@@ -1,0 +1,24 @@
+{
+  "name": "mnm-jec-techvista",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">",
+  "main": "baffle.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techvistasympo/mnm-jec-techvista.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techvistasympo/mnm-jec-techvista/issues"
+  },
+  "homepage": "https://github.com/techvistasympo/mnm-jec-techvista#readme",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
