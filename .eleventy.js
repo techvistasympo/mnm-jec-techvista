@@ -1,5 +1,8 @@
 export default function(eleventyConfig) {
 
+    eleventyConfig.addPassthroughCopy('static');
+    
+
     eleventyConfig.addPairedShortcode('comment', (content) => {
         // Simply ignore the content inside the "comment" tag
         return '';

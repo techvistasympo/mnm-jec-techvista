@@ -31,7 +31,7 @@
 @font-face {
 
   font-family: "OCRAq";
-  src: url("./OCRAq.TTF") format("opentype");
+  src: url("/static/font/OCRAq.TTF") format("opentype");
 }
 
 
@@ -202,7 +202,7 @@ flex-direction: column;
   transition: 0.2s ease;
 }
 .clip{
-  background: url("./ezgif-3-dc31446737.webp");
+  background: url("/static/images/ezgif-3-dc31446737.webp");
 /* background: url(./resource/ezgif-3-59312ad44b.webp); */
 -webkit-background-clip: text;
 background-repeat: no-repeat;
@@ -747,7 +747,7 @@ body::-webkit-scrollbar-thumb:hover {
   /* box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.5); */
 }
 .p1 {
-  background-image: url("./CIT Logo_blue_butterfly.webp");
+  background-image: url("/static/images/about/mnm_logo.png");
   /* background-image: url("./CIT\ Logo\ \(Actual\)\ PNG\ Format.png"); */
 background-position: center;
 background-size: contain;background-repeat: no-repeat;
@@ -759,7 +759,7 @@ background-size: 60%;
 }
 .p2 {
   
-    background-image: url("./t.webp"); 
+    background-image: url("/static/images/about/dept_logo.webp"); 
     left: 3%;
     
   /* background-image: url("./Group 25.png");
@@ -770,7 +770,7 @@ background-size: 60%;
   background-size: 57%;
     border-radius:  0%;
     top: -10%;
-    /* background-image: url("./photoroom (13).webp");
+    /* background-image: url("/static/images/photoroom (13).webp");
     background-position: center;
     background-size: contain;background-repeat: no-repeat;
     background-size: 120%;
@@ -783,7 +783,7 @@ background-size: 60%;
   border-radius: 100%;
   top: -21%;
   left: -3%; */
-  background-image: url("./photoroom (13).webp");
+  background-image: url("/static/images/about/sympo_logo.webp");
   background-position: center;
   background-size: contain;background-repeat: no-repeat;
   background-size: 120%;
