@@ -1,0 +1,17 @@
+[
+   {
+     "name": "event name 3",
+     "act_ev": "actual event name 3",
+     "descriptions": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+     "rules": ["first rule", "second rule", "third rule", "fourth rule"],
+     "contact_no": "0987654321"
+   },
+   {
+     "name": "event name 4",
+     "act_ev": "actual event name 4",
+     "descriptions": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+     "rules": ["alpha rule", "beta rule", "gamma rule", "delta rule"],
+     "contact_no": "1122334455"
+   }
+ ]
+ 

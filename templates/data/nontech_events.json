@@ -1,0 +1,31 @@
+[
+    {
+      "name": "event name 1",
+      "act_ev": "actual event name",
+      "descriptions": "lkjflsjoowueo jadlskjls adfsalkdfjs dlfkdddddddddddd dddddddddddddd dddddddddslllll llllllll llncccc cccccccccc",
+      "rules": ["one rule", "two rule", "three rule", "five rule"],
+      "contact_no": "7904127446"
+    },
+    {
+      "name": "event name 2",
+      "act_ev": "actual event name 2",
+      "descriptions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "rules": ["rule one", "rule two", "rule three", "rule four"],
+      "contact_no": "1234567890"
+    },
+    {
+      "name": "event name 3",
+      "act_ev": "actual event name 3",
+      "descriptions": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "rules": ["first rule", "second rule", "third rule", "fourth rule"],
+      "contact_no": "0987654321"
+    },
+    {
+      "name": "event name 4",
+      "act_ev": "actual event name 4",
+      "descriptions": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "rules": ["alpha rule", "beta rule", "gamma rule", "delta rule"],
+      "contact_no": "1122334455"
+    }
+  ]
+  
