@@ -1,6 +1,10 @@
 {
     "clg" : "changedMisrimal Navajee Munoth Jain Engineering College<br>Guru Marudhar Kesari Building,<br>Jyothi Nagar, Thoraipakkam, Chennai - 600097.",
     "sympo" : "it is a symposium which is also a symposium contucted my us symposium and the symposium is the symposium",
-    "csbs": "Business systems refer to the structured methods and computer-based tools used to manage and support various business processes. They are critical in automating operations, improving efficiency, and aiding decision-making. Examples includeComputer science is the study of computers, computational systems, and algorithms. It encompasses a range of topics including"
+    "csbs": "Business systems refer to the structured methods and computer-based tools used to manage and support various business processes. They are critical in automating operations, improving efficiency, and aiding decision-making. Examples includeComputer science is the study of computers, computational systems, and algorithms. It encompasses a range of topics including",
+    "executives":[
+        ["kavishri","President","6379779164"],
+        ["navaneetha krishnan","vice president", "7904127446"]
+    ]
 
 }
