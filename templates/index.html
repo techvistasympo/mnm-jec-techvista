@@ -115,9 +115,7 @@ Last Updated : May 14th 2022
       const loader = document.querySelector('.loader');
       loader.style.transition = 'opacity 0.2s ease-in-out';
       loader.style.opacity = '0';
-      setTimeout(() => {
-        loader.style.display = 'none';
-      }, 100);
+        loader.remove(); 
     }, 1000);
   });
 </script>
@@ -442,6 +440,7 @@ burger()
       {% for event in tech_events %}
       <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="{{ loop.index*100 }}" data-aos-anchor="#rapper">
             {# <img class="imc" src="/static/images/DESIGNO-LIT-O_WEB.webp"> #}
+            
             <div class="imc" style="
                 display: flex;
                 justify-content: center;
@@ -777,7 +776,7 @@ burger()
 
 
 <section class="thunder">
-See you on May 26th
+See you on April 9
 </section>
 
 
@@ -838,7 +837,7 @@ See you on May 26th
    
    <div class="last_pa" style="    padding-bottom: 5px;">
     <div class="divilin">
-      <div class="jwat">All Rights Reserved | Copyright ©2022 |<a class="meee" href="" target="_blank">&nbsp;Website By &nbsp;<div class="glow">Techvista Technical committee.</div></a></div>
+      <div class="jwat">All Rights Reserved | Copyright ©2025 |<a class="meee" href="" target="_blank">&nbsp;Website By &nbsp;<div class="glow">Techvista Technical committee.</div></a></div>
       <div class="jwat">Portions of this site were built using&nbsp;<a class="meee" href="https://github.com/jesvijonathan/talos-website" target="_blank"><div class="glow">talos-website repo</div></a>, licensed under the Apache License 2.0.</div>
       </a></div></div>
    </div>
