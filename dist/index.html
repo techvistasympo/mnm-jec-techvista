@@ -87,175 +87,183 @@ Last Updated : May 14th 2022
 </script> 
 
 
-<body>
-    
-<!-- From Uiverse.io by Li-Deheng --> 
-<div class="loader">
-  <div class="circle">
-    <div class="dot"></div>
-    <div class="outline"></div>
-  </div>
-  <div class="circle">
-    <div class="dot"></div>
-    <div class="outline"></div>
-  </div>
-  <div class="circle">
-    <div class="dot"></div>
-    <div class="outline"></div>
-  </div>
-  <div class="circle">
-    <div class="dot"></div>
-    <div class="outline"></div>
-  </div>
-</div>
+  <body>
+      
+  <!-- From Uiverse.io by Li-Deheng 
+  Copyright - 2025 Li-Deheng (李德恒) 
 
-<script>
-  window.addEventListener('load', function() {
-    setTimeout(() => {
-      const loader = document.querySelector('.loader');
-      loader.style.transition = 'opacity 0.2s ease-in-out';
-      loader.style.opacity = '0';
-        loader.remove(); 
-    }, 1000);
-  });
-</script>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-  <header>
-
-
-<div class="sid" >
-  <a  data-aos="fade-left" data-aos-duration="500" data-aos-delay="2500" data-aos-once="true">    <input id="theme-switcher" class="theme-switcher" autocomplete="off" value="" readonly></a>
-  <a  id="pur" data-aos="fade-left" data-aos-duration="500" data-aos-delay="2550" data-aos-once="true">    <input id="cu" class="theme-switcher ts1" autocomplete="off"></a>
-</div>
-
-<a data-aos="fade-in" data-aos-duration="600" data-aos-delay="2700" data-aos-once="true"><input id="dow" class="theme-switcher ts2" autocomplete="off"></a>
-
-  
-
-<!--  data-aos="fade-in-up" data-aos-easing="ease-in-sine" data-aos-duration="2400" data-aos-once="true" -->
-    <div class="header-container" id="header-container"> 
-      <div id="navbar">
-      <div class="navbar" style="    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    /*background: rgb(27 25 25 / 50%);*/
-    border-radius: 10px;
-    /*border-top-color: black;*/
-    padding: 20px;
-        box-shadow: 0 1px 2px rgba(156, 142, 142, 0.1);"> 
-
-        <div class="burger burger-slip" id="burger_menu" onclick="burger()">
-          <div class="burger-lines"></div>
-  
-          <script>
-
-          window.addEventListener("mouseup", function (event) {
-
-            var box = document.querySelector(".nav-item");
-            var box1 = document.querySelector("#invi");
-
-            if (event.target == box || event.target.parentNode == box) {
-
-              burger()
-            }
-            if (event.target == box1 || event.target.parentNode == box1) {
-
-burger()
-}
-          });
-
-            function burger() { 
-            
-            var myElement = document.querySelector("#burger_menu");
-
-              var myCover = document.querySelector("#cover");
-              var myinvi = document.querySelector("#invi");
-  
-              if (myElement.classList.contains("open")) {
-                myElement.classList.remove("open");
-                myCover.classList.remove("cover-open");
-                myinvi.classList.remove("invi-open");
-                
-              $('.sid').css({display: "none"});
-              document.getElementById("blurbg").style.display = "none";
-                
-              } else {
-                myElement.classList.add("open");
-                myCover.classList.add("cover-open");
-                myinvi.classList.add("invi-open");//
-                
-              $('.sid').css({display: "block"});
-              document.getElementById("blurbg").style.display = "block";
-                
-              }
-            }
-          </script>
-          
-          
-        </div>
-        
-        
-
-        <a class="logo" 
-        href="#" > 
-            
-          <svg  id="loid" class="yom hamburger toggler"  viewBox="0 0 160 127" fill="white" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_d_29_6)">
-            <path d="M151.5 0.5H2.5L8.5 11.5H145.5L151.5 0.5Z" fill="black"/>
-            <path d="M72.5 21.5H14.5L21.5 32.5H58.5V94.5L72.5 116.533V21.5Z" fill="black"/>
-            <path d="M139.5 21.5H81.5V116.533L96.5 93.2691V32.5H132.5L139.5 21.5Z" fill="black"/>
-            <path d="M151.5 0.5H2.5L8.5 11.5H145.5L151.5 0.5Z" stroke="black"/>
-            <path d="M72.5 21.5H14.5L21.5 32.5H58.5V94.5L72.5 116.533V21.5Z" stroke="black"/>
-            <path d="M139.5 21.5H81.5V116.533L96.5 93.2691V32.5H132.5L139.5 21.5Z" stroke="black"/>
-            </g>
-            <defs>
-            <filter id="filter0_d_29_6" x="0.5" y="0.5" width="159" height="126.032" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-            <feOffset dx="3" dy="5"/>
-            <feGaussianBlur stdDeviation="2.5"/>
-            <feComposite in2="hardAlpha" operator="out"/>
-            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_29_6"/>
-            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_29_6" result="shape"/>
-            </filter>
-            </defs>
-            </svg>
-    
-        </a>
-        <a class="cenl" id="logo_id">TECHVISTA</a>
-        </a>
-
-
-
-        <ul class="nav-menu">
-          <div class="invi" id="invi" data-aos="fade-left" data-aos-duration="500" data-aos-delay="2400">
-          <li class="nav-item">
-            <a href="#" class="nav-link" onclick="cls_b()">Home</a>
-            <div class="nbox"></div>
-          </li>
-          <li class="nav-item" data-aos="fade-left" data-aos-duration="500" data-aos-delay="2450">
-            <a href="#About" class="nav-link" onclick="cls_b()">About</a>
-            <div class="nbox"></div>
-          </li>
-          <li class="nav-item" data-aos="fade-left" data-aos-duration="500" data-aos-delay="2500">
-            <a href="#Events" class="nav-link" onclick="cls_b()">Events</a>
-            <div class="nbox"></div>
-          </li>
-          <li class="nav-item" data-aos="fade-left" data-aos-duration="500" data-aos-delay="2550">
-            <a href="#Locon" class="nav-link" onclick="cls_b();currentSlide(1)">Location</a>
-            <div class="nbox"></div>
-          </li>
-          <li class="nav-item" data-aos="fade-left" data-aos-duration="500" data-aos-delay="2600">
-            <a href="#Locon" class="nav-link" onclick="cls_b();currentSlide(2)">Contact</a>
-            <div class="nbox"></div>
-          </li>
-          </div>
-        </ul> 
-      </div>
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  --> 
+  <div class="loader">
+    <div class="circle">
+      <div class="dot"></div>
+      <div class="outline"></div>
     </div>
-  </header>
-<section>
+    <div class="circle">
+      <div class="dot"></div>
+      <div class="outline"></div>
+    </div>
+    <div class="circle">
+      <div class="dot"></div>
+      <div class="outline"></div>
+    </div>
+    <div class="circle">
+      <div class="dot"></div>
+      <div class="outline"></div>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(() => {
+        const loader = document.querySelector('.loader');
+        loader.style.transition = 'opacity 0.2s ease-in-out';
+        loader.style.opacity = '0';
+        loader.remove(); 
+      }, 500);
+    });
+  </script>
+
+
+    <header>
+
+
+  <div class="sid" >
+    <a  data-aos="fade-left" data-aos-duration="500" data-aos-delay="2500" data-aos-once="true">    <input id="theme-switcher" class="theme-switcher" autocomplete="off" value="" readonly></a>
+    <a  id="pur" data-aos="fade-left" data-aos-duration="500" data-aos-delay="2550" data-aos-once="true">    <input id="cu" class="theme-switcher ts1" autocomplete="off"></a>
+  </div>
+
+  <a data-aos="fade-in" data-aos-duration="600" data-aos-delay="2700" data-aos-once="true"><input id="dow" class="theme-switcher ts2" autocomplete="off"></a>
+
+    
+
+  <!--  data-aos="fade-in-up" data-aos-easing="ease-in-sine" data-aos-duration="2400" data-aos-once="true" -->
+      <div class="header-container" id="header-container"> 
+        <div id="navbar">
+        <div class="navbar" style="    backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      /*background: rgb(27 25 25 / 50%);*/
+      border-radius: 10px;
+      /*border-top-color: black;*/
+      padding: 20px;
+          box-shadow: 0 1px 2px rgba(156, 142, 142, 0.1);"> 
+
+          <div class="burger burger-slip" id="burger_menu" onclick="burger()">
+            <div class="burger-lines"></div>
+    
+            <script>
+
+            window.addEventListener("mouseup", function (event) {
+
+              var box = document.querySelector(".nav-item");
+              var box1 = document.querySelector("#invi");
+
+              if (event.target == box || event.target.parentNode == box) {
+
+                burger()
+              }
+              if (event.target == box1 || event.target.parentNode == box1) {
+
+  burger()
+  }
+            });
+
+              function burger() { 
+              
+              var myElement = document.querySelector("#burger_menu");
+
+                var myCover = document.querySelector("#cover");
+                var myinvi = document.querySelector("#invi");
+    
+                if (myElement.classList.contains("open")) {
+                  myElement.classList.remove("open");
+                  myCover.classList.remove("cover-open");
+                  myinvi.classList.remove("invi-open");
+                  
+                $('.sid').css({display: "none"});
+                document.getElementById("blurbg").style.display = "none";
+                  
+                } else {
+                  myElement.classList.add("open");
+                  myCover.classList.add("cover-open");
+                  myinvi.classList.add("invi-open");//
+                  
+                $('.sid').css({display: "block"});
+                document.getElementById("blurbg").style.display = "block";
+                  
+                }
+              }
+            </script>
+            
+            
+          </div>
+          
+          
+
+          <a class="logo" 
+          href="#" > 
+              
+            <svg  id="loid" class="yom hamburger toggler"  viewBox="0 0 160 127" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_29_6)">
+              <path d="M151.5 0.5H2.5L8.5 11.5H145.5L151.5 0.5Z" fill="black"/>
+              <path d="M72.5 21.5H14.5L21.5 32.5H58.5V94.5L72.5 116.533V21.5Z" fill="black"/>
+              <path d="M139.5 21.5H81.5V116.533L96.5 93.2691V32.5H132.5L139.5 21.5Z" fill="black"/>
+              <path d="M151.5 0.5H2.5L8.5 11.5H145.5L151.5 0.5Z" stroke="black"/>
+              <path d="M72.5 21.5H14.5L21.5 32.5H58.5V94.5L72.5 116.533V21.5Z" stroke="black"/>
+              <path d="M139.5 21.5H81.5V116.533L96.5 93.2691V32.5H132.5L139.5 21.5Z" stroke="black"/>
+              </g>
+              <defs>
+              <filter id="filter0_d_29_6" x="0.5" y="0.5" width="159" height="126.032" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dx="3" dy="5"/>
+              <feGaussianBlur stdDeviation="2.5"/>
+              <feComposite in2="hardAlpha" operator="out"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_29_6"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_29_6" result="shape"/>
+              </filter>
+              </defs>
+              </svg>
+      
+          </a>
+          <a class="cenl" id="logo_id">TECHVISTA</a>
+          </a>
+
+
+
+          <ul class="nav-menu">
+            <div class="invi" id="invi" data-aos="fade-left" data-aos-duration="500" data-aos-delay="2400">
+            <li class="nav-item">
+              <a href="#" class="nav-link" onclick="cls_b()">Home</a>
+              <div class="nbox"></div>
+            </li>
+            <li class="nav-item" data-aos="fade-left" data-aos-duration="500" data-aos-delay="2450">
+              <a href="#About" class="nav-link" onclick="cls_b()">About</a>
+              <div class="nbox"></div>
+            </li>
+            <li class="nav-item" data-aos="fade-left" data-aos-duration="500" data-aos-delay="2500">
+              <a href="#Events" class="nav-link" onclick="cls_b()">Events</a>
+              <div class="nbox"></div>
+            </li>
+            <li class="nav-item" data-aos="fade-left" data-aos-duration="500" data-aos-delay="2550">
+              <a href="#Locon" class="nav-link" onclick="cls_b();currentSlide(1)">Location</a>
+              <div class="nbox"></div>
+            </li>
+            <li class="nav-item" data-aos="fade-left" data-aos-duration="500" data-aos-delay="2600">
+              <a href="#Locon" class="nav-link" onclick="cls_b();currentSlide(2)">Contact</a>
+              <div class="nbox"></div>
+            </li>
+            </div>
+          </ul> 
+        </div>
+      </div>
+    </header>
+  <section>
 
   
   
