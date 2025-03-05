@@ -1165,6 +1165,33 @@ font-size: 32px;
     justify-content: center;
     align-content: space-around; 
 }
+.wrapper > * {
+  filter: blur(9px);
+}
+.wrapper::after {
+  content: "Comming Soon...";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  /* Modern, elegant font styling */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;         /* adjust size as needed */
+  letter-spacing: 0.1rem;  /* subtle spacing for a modern feel */
+  text-align: center;
+  
+  /* Create a gradient text effect */
+  background: linear-gradient(182deg, #fe4d4d, #ffffff);;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* Optional subtle shadow for added depth */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  
+  z-index: 1;              /* ensures the text appears above the cards */
+  pointer-events: none;    /* allows clicks to pass through if needed */
+}
 #Events
 {
   height: max-content;
@@ -1191,6 +1218,7 @@ font-size: 32px;
 /*   
   display: none; */
 }
+
 .slogan{
   z-index:5;
   position: absolute;
@@ -1313,6 +1341,9 @@ transform: translate(0%, -50%);
   
   border-radius: 3px;
 }
+
+
+
 #Register{
 
   padding-top: 4rem;
