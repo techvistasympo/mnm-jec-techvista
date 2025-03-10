@@ -56,19 +56,22 @@ Last Updated : May 14th 2022
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="static/css/style_2.css" />
+    <link rel="stylesheet" href="/static/css/res.css" />
+
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <link rel="stylesheet" href="/static/css/font-awesome.min.css" ><link
+    {# <link rel="stylesheet" href="/static/css/font-awesome.min.css" >
+    <link
     rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+  /> #}
   <script src="/static/js/baffle.min.js"></script>
 
 
  
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW100YW4T"></script>
+{# <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJW100YW4T"></script> #}
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -149,7 +152,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
       /*background: rgb(27 25 25 / 50%);*/
       border-radius: 10px;
       /*border-top-color: black;*/
-      padding: 20px;
+      
           box-shadow: 0 1px 2px rgba(156, 142, 142, 0.1);"> 
 
           <div class="burger burger-slip" id="burger_menu" onclick="burger()">
@@ -576,10 +579,13 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 </div>
 </div>
 
+
+
 </section>
 
 <section class="pop">
 <div class="boir" id="boir">  
+  <div class="scrolli">
 <div class="cls" id="x" onClick="reg_view(this.id)"><a>x</a></div>
 <div class="even_name" id="reg_ti">--Auto Title Here--</div>
 <div class="even_slog" id="reg_slog">--Auto Slogan Here--</div>
@@ -588,30 +594,34 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
   <div class="even_d_t"><u>Description</u></div>
   <div class="even_desc" id="reg_cont">--Auto Description Here--</div>
 </div>
-<div>|</div>
 <div class="cenli"></div>
 <div class="hi"><div class="even_d_t ccc"><u>Rules</u></div>
  
 
-  <ul class="even_desc_r" id="reg_rules" style="list-style-type: square;">
+  <ul class="even_desc" id="reg_rules" style="list-style-type: square;">
 --Auto Rules Here--
 </ul>
  </div>
 
- <div class="botbut">
-<a class="b1" id="reg_con" target="_blank" href="">Contact</a>
-<a class="b2" href="https://g.page/CITCollege" target="_blank">Venue</a>
-<a class="b4" id="reg_po" href="https://www.instagram.com/t.a.l.o.s_cit" target="_blank">Poster</a>
-<a class="b5" id="reg_sha" onclick="return copyTextFromElement();"   href="">Share</a>
-<input type="text" value="https://jesvijonathan.github.io/talos-website" id="myInput" style="display: none;">
-
-
-<a class="b3" id="reg_reg" href="https://jesvijonathan.github.io/talos-website" target="_blank">Register</a>
-
- </div>
 </div>
+</div>
+
+<div class="botbut">
+ 
+  <div>
+  <a class="b1" id="reg_con" target="_blank" href="">Contact</a>
+  <a class="b2" href="https://g.page/CITCollege" target="_blank">Venue</a>
+  <a class="b4" id="reg_po" href="https://www.instagram.com/t.a.l.o.s_cit" target="_blank">Poster</a>
+  <a class="b5" id="reg_sha" onclick="return copyTextFromElement();"   href="">Share</a>
+  </div>
+  
+  <a class="b3" id="reg_reg" href="https://jesvijonathan.github.io/talos-website" target="_blank">Register</a>
+  
+   </div>
 </div>
 </section>
+
+
 
 <section class="section s2" id="Locon"><div class="topic-head ano" id="Loconn" style="    padding-top: 10vh;" data-aos="zoom-in" data-aos-duration="400"  >Location</div>
   
@@ -624,7 +634,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
   <div class="locac fade"data-aos="zoom-out-down"  data-aos-duration="600"> 
   <div>
   <div class="loca ">
-    <iframe class="locam" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4032978033806!2d80.24244867484094!3d12.946025487366931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d1d6d688541%3A0x7e55411e7ce87f81!2sMisrimal%20Navajee%20Munoth%20Jain%20Engineering%20College!5e0!3m2!1sen!2sin!4v1741149458500!5m2!1sen!2sin"  allowfullscreen="" ></iframe>
+    {# <iframe class="locam" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4032978033806!2d80.24244867484094!3d12.946025487366931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d1d6d688541%3A0x7e55411e7ce87f81!2sMisrimal%20Navajee%20Munoth%20Jain%20Engineering%20College!5e0!3m2!1sen!2sin!4v1741149458500!5m2!1sen!2sin"  allowfullscreen="" ></iframe> #}
     {# <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> #}
     <!-- loading="lazy" -->
     
