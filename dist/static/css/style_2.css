@@ -1383,11 +1383,11 @@ display: none;
   border: 2px solid rgba(63, 63, 63, 0.5);
 }
 .locmi {
-  font-size: 1vw;
+  /* font-size: 1.7vw; */
   font-weight: 100;
   color:var(--fnt-colr);
   line-height: 3vh;
-  padding-top: 6vh;
+  padding-top: 3vh;
 }
 .locamm {
   top: 0px;
@@ -1399,8 +1399,8 @@ display: none;
   min-height: 20vh;
   min-width: 10vw;
 
-  max-height: 38vh;
-  max-width: 28vw;
+  /* max-height: 38vh; */
+  /* max-width: 28vw; */
 }
 .locamm h3 {
   text-align: left;
@@ -1409,7 +1409,7 @@ display: none;
   position: absolute; */
   /* margin-right: 7vw; */
   font-size: 24px;
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 .locamm h4 {
   text-align: left;
@@ -1947,25 +1947,25 @@ display: none;
     width: 100%;
     min-height: 20vh;
     min-width: 10vw;
-    max-height: 38vh;
+    /* max-height: 38vh; */
     max-width: unset;
   }
   .locamm h3 {
-    text-align: center;
+    /* text-align: center; */
     width: 100%;
     /* margin-right: 7vw; */
     font-size: 2.3vh;
     /* font-size: 2.6vw; */
   }
   .locmi {
-    font-size: 1.3vh;
+    font-size: 1.7vh;
     /* font-size: 1.2vw; */
     font-weight: 100;
-    color:var(--fnt-colr);
-    line-height: 2vh;
+    color: var(--fnt-colr);
+    line-height: 3.3vh;
     padding-top: 1.8vh;
     padding-bottom: 3vh;
-    text-align: center;
+    /* text-align: center; */
   }
  .locmi {
   display: block;
@@ -2080,6 +2080,8 @@ display: none;
   }
 
   .burger {
+    transform: translate(0%, -69%);
+    padding: 16px;
     /* height: 3em; */
     width: 3em;
     position: absolute;
