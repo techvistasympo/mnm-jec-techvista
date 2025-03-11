@@ -122,6 +122,21 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
   <script>
     window.addEventListener('load', function() {
+      
+        const params = new URLSearchParams(window.location.search);
+        const value = params.get('event_id');
+        console.log(value);
+        if (value!==null){
+          reg_view(value);
+          {# setTimeout(() => {
+            document.getElementById("#Events").scrollIntoView({ behavior: "smooth" });
+          },600) #}
+        }
+    })
+  </script>
+
+  <script>
+    window.addEventListener('load', function() {
       setTimeout(() => {
         const loader = document.querySelector('.loader');
         loader.style.transition = 'opacity 0.2s ease-in-out';
@@ -1238,19 +1253,6 @@ function copyText(text) {
       });
 </script>
 
-<script>
-  window.addEventListener('load', function() {
-    
-      const params = new URLSearchParams(window.location.search);
-      const value = params.get('event_id');
-      console.log(value);
-      if (value!==null){
-        reg_view(value);
-        {# setTimeout(() => {
-          document.getElementById("#Events").scrollIntoView({ behavior: "smooth" });
-        },600) #}
-      }
-  })
-</script>
+
 
 
