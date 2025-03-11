@@ -8,6 +8,12 @@ export default function(eleventyConfig) {
         return '';
     });
 
+    // Custom filter that concatenates two or more arrays
+    eleventyConfig.addFilter("concat", function(...arrays) {
+        // Flatten all arrays into a single array
+        return arrays.reduce((acc, curr) => acc.concat(curr), []);
+    });
+
     return {
         dir: {
             input: 'templates',     // Templates folder

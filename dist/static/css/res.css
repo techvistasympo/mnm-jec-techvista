@@ -353,6 +353,7 @@ display: inline-flex;
 }
 .scrolli {
   overflow-y: scroll;
+  overscroll-behavior: contain;
   height: 82%;
   width: 100%;
 }
