@@ -469,7 +469,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                 </div>
 
       
-            <img class="imd d" src="/static/images/event_1_bg.webp">
+            <img class="imd d" src="/static/images/event ({{loop.index}}).webp">
             <img class="imd c" src="/static/images/block.gif">
             <div class="slogan">{{event.act_ev}}</div>
             <div class="descriptions">
@@ -512,7 +512,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                 </div>
 
       
-            <img class="imd d" src="/static/images/event_1_bg.webp">
+            <img class="imd d" src="/static/images/event ({{loop.index+4}}).webp">
             <img class="imd c" src="/static/images/block.gif">
             <div class="slogan">{{event.act_ev}}</div>
             <div class="descriptions">
@@ -558,7 +558,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                 </div>
 
       
-            <img class="imd d" src="/static/images/event_1_bg.webp">
+            <img class="imd d" src="/static/images/event ({{loop.index+6}}).webp">
             <img class="imd c" src="/static/images/block.gif">
             <div class="slogan">{{event.act_ev}}</div>
             <div class="descriptions">
@@ -566,7 +566,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                 <p>
                   {{event.catchy_de}}
                 </p>
-                <button id="ev{{ loop.index+4 }}" onClick="reg_view(this.id)"><a>
+                <button id="ev{{ loop.index+6 }}" onClick="reg_view(this.id)"><a>
                   More</a>
                 </button>
             </div> 
