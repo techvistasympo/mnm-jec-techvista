@@ -1940,7 +1940,7 @@ display: none;
   }
   .locamm {
     top: 0px;
-    /* display: flex; */
+    display: flex;
     align-items: center;
     flex-direction: column;
     height: 100%;
@@ -2062,9 +2062,9 @@ display: none;
     font-size: 22px;
     transform: translate(-35%, 1%);
   }
-  .c{
+  /* .c{
     display: none;
-  }
+  } */
   .cursor{
     
   }

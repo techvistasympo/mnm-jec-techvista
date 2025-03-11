@@ -9,7 +9,7 @@ export default function(eleventyConfig) {
     });
 
     // Custom filter that concatenates two or more arrays
-    eleventyConfig.addFilter("concat", function(...arrays) {
+    eleventyConfig.addFilter("concatIt", function(...arrays) { 
         // Flatten all arrays into a single array
         return arrays.reduce((acc, curr) => acc.concat(curr), []);
     });
@@ -18,7 +18,7 @@ export default function(eleventyConfig) {
         dir: {
             input: 'templates',     // Templates folder
             includes: 'includes',    // Includes folder within templates
-            output: 'dist',        // Output folder for the generated site
+            output: 'dist',        // Output folder for the generated site 
             data: 'data'
         },
         htmlTemplateEngine: 'njk', // Use Nunjucks for HTML files

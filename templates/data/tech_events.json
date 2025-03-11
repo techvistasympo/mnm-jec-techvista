@@ -1,46 +1,50 @@
 [
   {
+    "id": "1",
     "ti": "event name 1",
     "act_ev": "actual event name",
-    "de" : "main disc here",
+    "de": "main disc here",
     "catchy_de": "In this symposium event, teams of up to two members will face a 50-minute coding challenge where they select one theme from up to 10 options revealed on the spot. Participants can choose to develop a project that integrates both front-end and back-end functionalities or focus exclusively on one aspect—either front-end or back-end. The submissions will be evaluated using separate marking.",
     "ca": "captions",
     "ru": "<li>● This is a team event (minimum 1 member, maximum 3 members in a team).</li><li>● Theme of the event will be <b>announced on spot.</b></li><li>● Designing prototype should be done in <b>figma</b> within a duration of <b>1 hour, and 5 mins to think over the theme.</b></li><li>● The participants should <b>bring their own devices</b> to sketch their design.</li><li>● The design should be original & <b>worked from scratch</b>.</li><li>● Plagiarism or Copy of work/template shall be prohibited.</li><li>● Decisions by the committee judges shall be final.</li>",
     "re": "https://forms.gle/FHchmRa9gf6Le389A",
     "co": "tel:+91904127446",
-    "po" : "https://www.instagram.com/tech_vist_a"
+    "po": "https://www.instagram.com/tech_vist_a"
   },
   {
+    "id": "2",
     "ti": "event name 2",
     "act_ev": "actual event name 2",
-    "de" : "main disc here",
+    "de": "main disc here",
     "catchy_de": "A high-energy hackathon where participants will create innovative solutions using emerging technologies. Teams must think quickly and creatively under tight deadlines. Projects will be judged on originality, technical merit, and feasibility.",
     "ca": "captions",
     "ru": "<li>● Open to both individual and team participation.</li><li>● The challenge lasts 60 minutes with surprise elements introduced during the event.</li><li>● Participants must deliver a working prototype by the end of the session.</li><li>● Judging criteria include innovation, design, and functionality.</li>",
     "re": "https://forms.gle/event2registration",
     "co": "tel:+91904127447",
-    "po" : "https://www.instagram.com/tech_vist_a"
+    "po": "https://www.instagram.com/tech_vist_a"
   },
   {
+    "id": "3",
     "ti": "event name 3",
     "act_ev": "actual event name 3",
-    "de" : "main disc here",
+    "de": "main disc here",
     "catchy_de": "Join us for an interactive workshop focused on modern web development trends. Learn new techniques, tools, and frameworks in a hands-on environment, and apply your skills to build a responsive web application in real-time.",
     "ca": "captions",
     "ru": "<li>● Participants will receive exclusive resource materials.</li><li>● Bring your laptop with pre-installed development software.</li><li>● The workshop features live coding sessions and interactive Q&A segments.</li><li>● Limited seats available; early registration is encouraged.</li>",
     "re": "https://forms.gle/event3registration",
     "co": "tel:+91904127448",
-    "po" : "https://www.instagram.com/tech_vist_a"
+    "po": "https://www.instagram.com/tech_vist_a"
   },
   {
+    "id": "4",
     "ti": "event name 4",
     "act_ev": "actual event name 4",
-    "de" : "main disc here",
+    "de": "main disc here",
     "catchy_de": "Experience the thrill of competitive gaming in our eSports showdown. Whether you're a seasoned gamer or new to the scene, this event promises intense action, strategic gameplay, and valuable prizes for the top performers.",
     "ca": "captions",
     "ru": "<li>● The competition is structured in multiple knockout rounds.</li><li>● Registration requires a valid gaming ID.</li><li>● Teams can consist of up to 4 members.</li><li>● Prizes include gaming accessories and cash rewards for winners.</li>",
     "re": "https://forms.gle/event4registration",
     "co": "tel:+91904127449",
-    "po" : "https://www.instagram.com/tech_vist_a"
+    "po": "https://www.instagram.com/tech_vist_a"
   }
 ]
