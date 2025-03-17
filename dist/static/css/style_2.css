@@ -694,8 +694,8 @@ body::-webkit-scrollbar-thumb:hover {
   padding-bottom: 1rem;
 }
 .aaaa{
-  padding-top: 2rem;
-    padding-bottom: 2rem;
+  padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .ano {
   padding-top: 3rem;
@@ -712,7 +712,7 @@ body::-webkit-scrollbar-thumb:hover {
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: end;
   gap: 16vw;
   margin-top: 5rem;
 }
@@ -726,10 +726,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .topic-desc {
-  padding-top: 7vw;
+/*  padding-top: 7vw;*/
   font-family: "SF Pro Text Heavy", Sans-serif;
   color: var(--texb);
-  font-size: 1.3vw;
+  font-size: 1.4vw;
   font-weight: 100;
   text-align: center;
   float: right;
