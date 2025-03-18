@@ -23,7 +23,7 @@ Last Updated : May 14th 2022
   <meta charset="UTF-8">
   <meta name="description" content="TECHVISTA, an event organized by the department of CS & BS , In regards to Symposium conducted in Misrimal Navajee Munoth Jain Engineering College. ">
   <meta name="keywords" content="TECHVISTA, MNMJEC, CHENNAI, SYMPOSIUM, EVENT, COLLEGE, COMPETITION, ANNA UNIVERSITY, TECHNOLOGY, CSBS, COMPUTER SCIENCE, BUSINESS, SYSTEMS, TECHVISTA MNMJEC, JESVI, DESIGN">
-  <meta name="author" content="Jesvi Jonathan">
+  <meta name="author" content="Santhosh M">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>TECHVISTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -121,18 +121,21 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
   </div>
 
   <script>
-    window.addEventListener('load', function() {
-      
-        const params = new URLSearchParams(window.location.search);
+    let prevEle;
+    function getEvent(){
+      const params = new URLSearchParams(window.location.search);
         const value = params.get('event_id');
         console.log(value);
         if (value!==null){
           reg_view(value);
           {# setTimeout(() => {
-            document.getElementById("#Events").scrollIntoView({ behavior: "smooth" });
-          },600) #}
+              document.getElementById("#Events").scrollIntoView({ behavior: "smooth" });
+            },600) #}
+        } else {
+          // document.querySelector("#x").click();
         }
-    })
+    }
+    window.addEventListener('load', getEvent)
   </script>
 
   <script>
@@ -261,19 +264,19 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
               <div class="nbox"></div>
             </li>
             <li class="nav-item" data-aos="fade-left" data-aos-duration="500" data-aos-delay="2450">
-              <a href="#About" class="nav-link" onclick="cls_b()">About</a>
+              <a  class="nav-link" onclick="cls_b('About')">About</a>
               <div class="nbox"></div>
             </li>
             <li class="nav-item" data-aos="fade-left" data-aos-duration="500" data-aos-delay="2500">
-              <a href="#Events" class="nav-link" onclick="cls_b()">Events</a>
+              <a  class="nav-link" onclick="cls_b('Events')">Events</a>
               <div class="nbox"></div>
             </li>
             <li class="nav-item" data-aos="fade-left" data-aos-duration="500" data-aos-delay="2550">
-              <a href="#Locon" class="nav-link" onclick="cls_b();currentSlide(1)">Location</a>
+              <a  class="nav-link" onclick="cls_b('Locon');currentSlide(1)">Location</a>
               <div class="nbox"></div>
             </li>
             <li class="nav-item" data-aos="fade-left" data-aos-duration="500" data-aos-delay="2600">
-              <a href="#Locon" class="nav-link" onclick="cls_b();currentSlide(2)">Contact</a>
+              <a  class="nav-link" onclick="cls_b('Locon');currentSlide(2)">Contact</a>
               <div class="nbox"></div>
             </li>
             </div>
@@ -459,7 +462,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 <div class="events" id="e1"> 
 
-  <div class="topic-head aaaa"  data-aos="zoom-in" data-aos-duration="400" >Technical Events</div>  
+  <div class="topic-head aaaa"  data-aos="zoom-in" data-aos-duration="400" style="margin-top: 2em;" >Technical Events</div>  
     <div class="wrapper" id="rapper" >
 
 
@@ -1101,7 +1104,7 @@ $(document).ready(function(){
 
 <script> 
 
-  function cls_b(){
+  function cls_b(to=""){
     
     document.getElementById("blurbg").style.display = "none";
     $('.blurbg').css({zindex:"-15"});
@@ -1111,6 +1114,21 @@ $(document).ready(function(){
       document.querySelector("#cover").classList.remove("cover-open");
       document.querySelector("#invi").classList.remove("invi-open");
       document.querySelector("#boir").classList.remove("up");
+      if (to!==""){
+        history.replaceState({},"","/");
+        window.location = "#"+to;
+        const offset = 50; // Adjust based on your navbar height
+
+        const elementPosition =  document.querySelector("#"+to).getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+
+
+      }
     } 
 
     let boir_closing;
@@ -1137,7 +1155,7 @@ $(document).ready(function(){
 
                   {% for event in all_events %}
                   case "ev{{loop.index}}":
-                    history.replaceState({},"","?event_id=ev{{loop.index}}");
+                    history.pushState({},"","?event_id=ev{{loop.index}}");
                     de ="{{event.de}}";
                     ti = "{{event.ti}}";
                     ca = "{{event.ca}}";
@@ -1171,6 +1189,8 @@ $(document).ready(function(){
                 $('.boir').hide(0); 
                 document.getElementById("blurbg").style.display = "none";
                 $('.blurbg').css({zindex:"-15"});
+                // history.pushState({}, "", url);
+                history.pushState({},"","/");
                 document.querySelector("#"+boir_closing).scrollIntoView({ behavior: "smooth" });
               } else {
                 myCover.classList.add("up"); 
@@ -1197,6 +1217,10 @@ function copyTextFromElement() {
 function copyText(text) {
   navigator.clipboard.writeText(text);
 }
+</script>
+<script type="text/javascript">
+
+  window.addEventListener('popstate', getEvent);
 </script>
 
 <script>
