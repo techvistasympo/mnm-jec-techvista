@@ -751,6 +751,41 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
         </div>
 
       
+      <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250" data-aos-anchor="#rapper_2">
+            
+            <div class="imc" style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Libre Baskerville', serif;
+                font-size: clamp(28px, 4.2vw, 34px);
+                color: white;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                background: transparent;
+                text-shadow: -0.1px -0.1px 0 cyan, 0.1px 2.1px 0 magenta;
+                padding-bottom: 21px;
+                      ">
+                    <span>Event name 8</span>
+                </div>
+
+      
+            <img class="imd d" src="/static/images/event (9).webp">
+            <img class="imd c" src="/static/images/block.gif">
+            <div class="slogan">actual event name 8</div>
+            <div class="descriptions">
+                <h1>Event name 8</h1>
+                <p>
+                  Immerse yourself in our IoT challenge, where creative solutions for smart devices and connected technologies are put to the test.
+                </p>
+                <button id="ev9" onClick="reg_view(this.id)"><a>
+                  More</a>
+                </button>
+            </div> 
+
+        </div>
+
+      
  
  
 </div>
@@ -758,7 +793,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 <div class="events" id="e1"> 
 
-  <div class="topic-head aaaa"  data-aos="zoom-in" data-aos-duration="400" >Online Events</div> 
+  <div class="topic-head aaaa"  data-aos="zoom-in" data-aos-duration="400" >Online Event</div> 
     <div class="wrapper" id="rapper_3">
 
 
@@ -1491,11 +1526,11 @@ $(document).ready(function(){
                   case "ev9":
                     history.replaceState({},"","?event_id=ev9");
                     de ="main disc here";
-                    ti = "event name 1";
+                    ti = "event name 8";
                     ca = "captions";
-                    ru = "<li>● This is a team event (minimum 1 member, maximum 3 members in a team).</li><li>● Theme of the event will be <b>announced on spot.</b></li><li>● Designing prototype should be done in <b>figma</b> within a duration of <b>1 hour, and 5 mins to think over the theme.</b></li><li>● The participants should <b>bring their own devices</b> to sketch their design.</li><li>● The design should be original & <b>worked from scratch</b>.</li><li>● Plagiarism or Copy of work/template shall be prohibited.</li><li>● Decisions by the committee judges shall be final.</li>";
-                    re = "https://forms.gle/FHchmRa9gf6Le389A";   
-                    co = "tel:+91904127446"; //madhush
+                    ru = "<li>● Focus on innovation in smart technology.</li><li>● Teams can have 1 to 4 members.</li><li>● Projects must be functional prototypes.</li><li>● Judges will evaluate based on efficiency and innovation.</li>";
+                    re = "https://forms.gle/event8registration";   
+                    co = "tel:+91904127453"; //madhush
                     li = "./event";
                     po = "https://www.instagram.com/tech_vist_a";
 
@@ -1505,6 +1540,20 @@ $(document).ready(function(){
                   case "ev10":
                     history.replaceState({},"","?event_id=ev10");
                     de ="main disc here";
+                    ti = "event name 1";
+                    ca = "captions";
+                    ru = "<li>● This is a team event (minimum 1 member, maximum 3 members in a team).</li><li>● Theme of the event will be <b>announced on spot.</b></li><li>● Designing prototype should be done in <b>figma</b> within a duration of <b>1 hour, and 5 mins to think over the theme.</b></li><li>● The participants should <b>bring their own devices</b> to sketch their design.</li><li>● The design should be original & <b>worked from scratch</b>.</li><li>● Plagiarism or Copy of work/template shall be prohibited.</li><li>● Decisions by the committee judges shall be final.</li>";
+                    re = "https://forms.gle/FHchmRa9gf6Le389A";   
+                    co = "tel:+91904127446"; //madhush
+                    li = "./event";
+                    po = "https://www.instagram.com/tech_vist_a";
+
+                    boir_closing="ev10"
+                    break;  
+                    
+                  case "ev11":
+                    history.replaceState({},"","?event_id=ev11");
+                    de ="main disc here";
                     ti = "event name 2";
                     ca = "captions";
                     ru = "<li>● Open to both individual and team participation.</li><li>● The challenge lasts 60 minutes with surprise elements introduced during the event.</li><li>● Participants must deliver a working prototype by the end of the session.</li><li>● Judging criteria include innovation, design, and functionality.</li>";
@@ -1513,7 +1562,7 @@ $(document).ready(function(){
                     li = "./event";
                     po = "https://www.instagram.com/tech_vist_a";
 
-                    boir_closing="ev10"
+                    boir_closing="ev11"
                     break;  
                     
                   
@@ -1618,6 +1667,210 @@ function copyText(text) {
 
       });
 </script>
+
+<div id="draggableWindow" class="floating-window">
+  <h2>Draggable Window</h2>
+  <p>You can drag me around!</p>
+</div>
+
+
+<style>
+  .floating-window {
+    position: fixed;             /* Use fixed or absolute positioning */
+    top: 100px;
+    left: 100px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+    cursor: move;                /* Shows a move cursor to indicate draggability */
+  }  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+</style>
+
+<!-- From Uiverse.io by Muhammad-Usman-911 --> 
+<div class="button-container">
+  <a class="codepen-button">
+    <span class="span">
+      <p class="p">Shop</p>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="1em"
+    viewBox="0 0 576 512"
+    fill="#000"
+    class="cart"
+  >
+    <path
+      d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+    ></path></svg></span>
+      </a>
+<div class="badge">3</div>
+</div>
+
+<style>
+  /**
+      * Reinstate scrolling for non-JS clients
+      */
+  .simplebar-content-wrapper {
+    overflow: auto;
+  }
+</style>
+</noscript>
+
+<!-- Page Title -->
+<title>OldSkool | Bootstrap 5 HTML Template</title>
+
+<style>
+/* From Uiverse.io by Muhammad-Usman-911 */ 
+.codepen-button {
+font-family: monospace;
+font-weight: bolder;
+display: block;
+cursor: pointer;
+color: #000;
+margin: 0 auto;
+position: relative;
+text-decoration: none;
+font-weight: 600;
+border-radius: 6px;
+overflow: hidden;
+padding: 3px;
+width: 130px;
+isolation: isolate;
+transform: scale(0.85);
+}
+
+.codepen-button::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 420%;
+height: 120%;
+background: linear-gradient(
+115deg,
+#628fbc,
+hsl(0, 93%, 73%),
+#f032a7,
+#329af0,
+#f032a7
+);
+background-size: 25% 100%;
+animation: border-animation 0.75s linear infinite;
+animation-play-state: paused;
+translate: -5% 0%;
+transition: translate 0.25s ease-out;
+}
+
+.codepen-button:hover::before {
+animation-play-state: running;
+transition-duration: 0.75s;
+translate: 0% 0%;
+}
+
+@keyframes border-animation {
+to {
+transform: translateX(-25%);
+}
+}
+
+.codepen-button span {
+position: relative;
+display: block;
+padding: 1rem 1.5rem;
+font-size: 1.1rem;
+background: #fff;
+border-radius: 3px;
+height: 100%;
+}
+
+.codepen-button .span {
+display: flex;
+flex-direction: row;
+justify-content: start;
+align-items: center;
+gap: 10px;
+}
+
+.codepen-button .p {
+margin: 0;
+}
+/* Add these positioning properties to your existing .codepen-button */
+.codepen-button {
+position: fixed;  /* Add this */
+bottom: 20px;     /* Add this */
+right: 20px;      /* Add this */
+z-index: 1000;    /* Add this */
+/* Keep all your existing styles below */
+font-family: monospace;
+font-weight: bolder;
+display: block;
+cursor: pointer;
+color: #000;
+margin: 0 auto;
+text-decoration: none;
+border-radius: 6px;
+overflow: hidden;
+padding: 3px;
+width: 130px;
+isolation: isolate;
+transform: scale(0.85);
+}
+
+/* Keep all your other existing styles the same */
+/* ... rest of your existing CSS ... */
+</style>
+<script>
+  // Attach drag functionality to the element
+  dragElement(document.getElementById("draggableWindow"));
+
+  function dragElement(elmnt) {
+    let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+
+    // When the mouse is pressed down on the element, start the drag:
+    elmnt.onmousedown = dragMouseDown;
+
+    function dragMouseDown(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // Record the initial mouse position:
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      // Set up event listeners for moving the element and for releasing the mouse:
+      document.onmousemove = elementDrag;
+      document.onmouseup = closeDragElement;
+    }
+
+    function elementDrag(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // Calculate the new cursor position:
+      pos1 = pos3 - e.clientX;
+      pos2 = pos4 - e.clientY;
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      // Update the element's position:
+      elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+      elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    }
+
+    function closeDragElement() {
+      // Remove the event listeners when the mouse button is released:
+      document.onmouseup = null;
+      document.onmousemove = null;
+    }
+  }
+</script>
+
 
 
 

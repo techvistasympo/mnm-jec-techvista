@@ -46,5 +46,17 @@
     "re": "https://forms.gle/event8registration",
     "co": "tel:+91904127453",
     "po": "https://www.instagram.com/tech_vist_a"
+  },
+  {
+    "id": "8",
+    "ti": "event name 8",
+    "act_ev": "actual event name 8",
+    "de": "main disc here",
+    "catchy_de": "Immerse yourself in our IoT challenge, where creative solutions for smart devices and connected technologies are put to the test.",
+    "ca": "captions",
+    "ru": "<li>● Focus on innovation in smart technology.</li><li>● Teams can have 1 to 4 members.</li><li>● Projects must be functional prototypes.</li><li>● Judges will evaluate based on efficiency and innovation.</li>",
+    "re": "https://forms.gle/event8registration",
+    "co": "tel:+91904127453",
+    "po": "https://www.instagram.com/tech_vist_a"
   }
 ]
