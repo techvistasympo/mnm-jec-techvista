@@ -405,7 +405,7 @@ transform: rotate(90deg);
     position: fixed;
     color: var( --fnt-colr); 
   
-    z-index: 11;
+    z-index: 100;
     transition: 0.3s ease-in-out ;
   }
   
@@ -710,11 +710,11 @@ body::-webkit-scrollbar-thumb:hover {
 
 .topi {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: end;
-  gap: 16vw;
-  margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16vw;
+    margin-top: 2rem;
 }
 .about {
   display: flex;
@@ -747,19 +747,19 @@ body::-webkit-scrollbar-thumb:hover {
   /* box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.5); */
 }
 .p1 {
-  background-image: url("/static/images/about/mnm_logo.png");
-  /* background-image: url("./CIT\ Logo\ \(Actual\)\ PNG\ Format.png"); */
-background-position: center;
-background-size: contain;background-repeat: no-repeat;
-background-size: 60%;
-
-  border-radius:  0%;
-  top: -10%;
-  left: 6%;
+  background-image: url(/static/images/about/mnm_logo.png);
+  /* background-image: url(./CIT Logo (Actual) PNG Format.png); */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 86%;
+  border-radius: 0%;
+  top: -7%;
+  /* left: 6%; */
 }
 .p2 {
   
-    background-image: url("/static/images/about/dept_logo.webp"); 
+    background-image: url("/static/images/about/dept_logo.png"); 
     left: 3%;
     
   /* background-image: url("./Group 25.png");
@@ -783,13 +783,13 @@ background-size: 60%;
   border-radius: 100%;
   top: -21%;
   left: -3%; */
-  background-image: url("/static/images/about/sympo_logo.webp");
+  background-image: url("/static/images/about/sympo_logo.png");
   background-position: center;
   background-size: contain;background-repeat: no-repeat;
-  background-size: 120%;
-    border-radius:  100%;
-    top: -20%;
-    left:-1%; transform: scaleX(-1);
+  background-size: 88%;
+  border-radius: 100%;
+  top: -11%;
+    /* left:-1%; transform: scaleX(-1); */
 }
 
 .container {
@@ -1165,6 +1165,8 @@ font-size: 32px;
     justify-content: center;
     align-content: space-around; 
 }
+
+
 /* .wrapper > * {
   filter: blur(9px);
 } */
@@ -2040,10 +2042,10 @@ display: none;
     font-size: 6vw;
     width: 100%;
   }
-  .p1{
+  /* .p1{
     top: -3%;
     left: 4%;
-  }
+  } */
   .p2{ 
     top: -4%;
     left: 0%;
@@ -2505,3 +2507,349 @@ transform: translate(-50%,-50%);
   
   transition: 0.5s ease-in-out;
 }
+
+/* theme-mode-style */
+.uiverse-container.light {
+  --color-pure: #000;
+  --color-primary: #e8e8e8;
+  --color-secondary: #212121;
+  --muted: #b8b8b8;
+}
+/* Define the dark theme using a class */
+.uiverse-container.dark {
+  --color-pure: #fff;
+  --color-primary: #212121;
+  --color-secondary: #fff;
+  --muted: #383838;
+}
+
+#e1,
+#e2,
+#e3 {
+  display: none;
+}
+
+/* .uiverse-mode + .uiverse-container {
+  --color-pure: #000;
+  --color-primary: #e8e8e8;
+  --color-secondary: #212121;
+  --muted: #b8b8b8;
+}
+.uiverse-mode:checked + .uiverse-container {
+  --color-pure: #fff;
+  --color-primary: #212121;
+  --color-secondary: #fff;
+  --muted: #383838;
+} */
+
+.uiverse-container {
+  /* background-color: var(--color-secondary); */
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.uiverse-container .uiverse-theme {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  position: relative;
+  cursor: pointer;
+  z-index: 9;
+  -webkit-user-select: none;
+  user-select: none;
+  border: 1px solid var(--muted);
+  border-radius: calc(var(--round) - var(--p-y));
+  margin-left: calc(var(--p-x) * 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  transition: background-color 0.25s linear;
+}
+.uiverse-container .uiverse-theme:hover {
+  background-color: var(--muted);
+}
+.uiverse-container .uiverse-theme::before {
+  content: "";
+  position: absolute;
+  left: calc(var(--p-x) * -1);
+  width: 1px;
+  height: 100%;
+  background-color: var(--muted);
+}
+.uiverse-container .uiverse-theme span {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0.125rem;
+  border-radius: 9999px;
+  align-items: center;
+  justify-content: center;
+}
+.uiverse-mode:checked ~ .uiverse-wrap > .uiverse-container .uiverse-theme span.uiverse-light,
+.uiverse-mode ~ .uiverse-wrap > .uiverse-container .uiverse-theme span.uiverse-dark {
+  display: none;
+}
+.uiverse-mode ~ .uiverse-wrap > .uiverse-container .uiverse-theme span.uiverse-light,
+.uiverse-mode:checked ~ .uiverse-wrap > .uiverse-container .uiverse-theme span.uiverse-dark {
+  display: flex;
+}
+.uiverse-container .uiverse-theme svg {
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke: currentColor;
+  fill: none;
+  height: 22px;
+  width: 22px;
+}
+
+/* main style */
+.uiverse-wrap {
+  --round: 10px;
+  --p-x: 8px;
+  --p-y: 4px;
+  --w-label: 28vw;
+  display: flex;
+  align-items: center;
+  padding: var(--p-y) var(--p-x);
+  position: sticky;
+  background: var(--color-primary);
+  border-radius: var(--round);
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  z-index: 1000;
+}
+/* For screens up to 768px */
+@media only screen and (max-width: 768px) {
+  .uiverse-wrap {
+    top: 69px;
+  }
+}
+
+/* For screens between 769px and 1300px */
+@media only screen and (min-width: 769px) and (max-width: 1300px) {
+  .uiverse-wrap {
+    top: 89.5px;
+  }
+}
+
+
+
+.uiverse-wrap input {
+  height: 0;
+  width: 0;
+  position: absolute;
+  overflow: hidden;
+  display: none;
+  visibility: hidden;
+}
+
+.uiverse-label {
+  cursor: pointer;
+  outline: none;
+  font-size: 0.875rem;
+  letter-spacing: initial;
+  font-weight: 500;
+  color: var(--color-secondary);
+  background: transparent;
+  padding: 12px 16px;
+  width: var(--w-label);
+  min-width: var(--w-label);
+  text-decoration: none;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: color 0.25s ease;
+  outline-offset: -6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  -webkit-tap-highlight-color: transparent;
+}
+.uiverse-label span {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* -webkit-line-clamp: 1; */
+  color: var(--fnt-colr);
+    font-size: 2.1vw;
+    font-weight: 750;
+    text-align: center;
+    padding: 2vw;
+}
+
+.uiverse-wrap input[class*="uiverse-rd-"]:checked ~ .uiverse-wrap > .uiverse-label {
+  color: var(--color-pure);
+}
+
+.uiverse-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: absolute;
+  transform-origin: 0 0 0;
+  height: 100%;
+  width: var(--w-label);
+  z-index: 0;
+  transition: transform 0.5s cubic-bezier(0.33, 0.83, 0.99, 0.98);
+}
+
+.uiverse-bar::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: var(--color-secondary);
+}
+
+.uiverse-bar::after {
+  bottom: 0;
+  border-radius: 9999px 9999px 0 0;
+}
+
+.uiverse-slidebar {
+  position: absolute;
+  height: calc(100% - (var(--p-y) * 4));
+  width: var(--w-label);
+  border-radius: calc(var(--round) - var(--p-y));
+  background: var(--muted);
+  transform-origin: 0 0 0;
+  z-index: 0;
+  transition: transform 0.5s cubic-bezier(0.33, 0.83, 0.99, 0.98);
+}
+
+.uiverse-rd-1:checked ~ .uiverse-wrap .uiverse-bar,
+.uiverse-rd-1:checked ~ .uiverse-wrap .uiverse-slidebar {
+  transform: translateX(0) scaleX(1);
+}
+
+.uiverse-rd-2:checked ~ .uiverse-wrap .uiverse-bar,
+.uiverse-rd-2:checked ~ .uiverse-wrap .uiverse-slidebar {
+  transform: translateX(100%) scaleX(1);
+}
+
+.uiverse-rd-3:checked ~ .uiverse-wrap .uiverse-bar,
+.uiverse-rd-3:checked ~ .uiverse-wrap .uiverse-slidebar {
+  transform: translateX(200%) scaleX(1);
+}
+/* Add these new hover effect rules */
+.uiverse-wrap label[for="uiverse-rd-1"]:hover ~ .uiverse-slidebar {
+  transform: translateX(0) scaleX(1);
+}
+
+.uiverse-wrap label[for="uiverse-rd-2"]:hover ~ .uiverse-slidebar {
+  transform: translateX(100%) scaleX(1);
+}
+
+.uiverse-wrap label[for="uiverse-rd-3"]:hover ~ .uiverse-slidebar {
+  transform: translateX(200%) scaleX(1);
+}
+
+
+/* When the first radio is checked, show e1 */
+#uiverse-rd-1:checked ~ #e1 {
+  display: block;
+}
+
+/* When the second radio is checked, show e2 */
+#uiverse-rd-2:checked ~ #e2 {
+  display: block;
+}
+
+/* When the third radio is checked, show e3 */
+#uiverse-rd-3:checked ~ #e3 {
+  display: block;
+}
+
+
+
+/* From Uiverse.io by Gaurang7717 */ 
+.light-button button.bt {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.light-button button.bt .button-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  background-color: #0a0a0a;
+  border-radius: 5px;
+  color: #0a66c2z;
+  font-weight: 700;
+  transition: 300ms;
+  outline: #0f0f0f 2px solid;
+  outline-offset: 20;
+}
+
+.light-button button.bt .button-holder svg {
+  height: 50px;
+  fill: #0f0f0f;
+  transition: 300ms;
+}
+
+.light-button button.bt .light-holder {
+  position: absolute;
+  height: 200px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.light-button button.bt .light-holder .dot {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #0a0a0a;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.light-button button.bt .light-holder .light {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+  background: transparent;
+}
+
+.light-button button.bt:hover .button-holder svg {
+  fill: rgba(10, 102, 194, 1);
+}
+
+.light-button button.bt:hover .button-holder {
+  color: rgba(10, 102, 194, 1);
+  outline: rgba(10, 102, 194, 1) 2px solid;
+  outline-offset: 2px;
+}
+
+.light-button button.bt:hover .light-holder .light {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(10, 102, 194, 1) 0%,
+    rgba(255, 255, 255, 0) 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
