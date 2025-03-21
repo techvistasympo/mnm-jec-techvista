@@ -1,14 +1,14 @@
 [
   {
    "id":"1",
-        "ti": "Code Detox",
-        "act_ev": "Code Detox",
-        "de": "Participants will debug faulty Python code across different difficulty levels while ensuring optimal functionality.",
-        "catchy_de": "Put your debugging skills to the test! Code Detox challenges you to find and fix errors in buggy Python code within a limited time. Do you have what it takes to debug like a pro?",
-        "ca": "Debug, Fix, Win!",
-        "ru": "<li>● Individual event.</li><li>● Participants can only fix bugs and cannot rewrite logic unless specified.</li><li>● Using online resources, AI tools, or external help is prohibited.</li><li>● Hardcoded solutions will be penalized.</li><li>● Incorrect fixes result in negative marking.</li><li>● The participant with the highest score wins.</li>",
-        "re": "https://forms.gle/FHchmRa9gf6Le389A",
-        "co": "9677049610",
+    "ti": "Code Detox",
+    "act_ev": "Code Detox",
+    "de": "Participants will debug faulty Python code across different difficulty levels while ensuring optimal functionality.",
+    "catchy_de": "Put your debugging skills to the test! Code Detox challenges you to find and fix errors in buggy Python code within a limited time. Do you have what it takes to debug like a pro?",
+    "ca": "Debug, Fix, Win!",
+    "ru": "<li>● Individual event.</li><li>● Participants can only fix bugs and cannot rewrite logic unless specified.</li><li>● Using online resources, AI tools, or external help is prohibited.</li><li>● Hardcoded solutions will be penalized.</li><li>● Incorrect fixes result in negative marking.</li><li>● The participant with the highest score wins.</li>",
+    "re": "https://forms.gle/FHchmRa9gf6Le389A",
+    "co": "9677049610",
     "po": "https://www.instagram.com/tech_vist_a"
   },
   {
