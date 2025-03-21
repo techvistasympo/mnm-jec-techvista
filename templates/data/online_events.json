@@ -1,8 +1,20 @@
 [
   {
     "id": "9",
-    "ti": "event name 1",
-    "act_ev": "actual event name",
+    "ti": "Free Fire",
+    "act_ev": "WAR SIMULATION",
+    "de": "main disc here",
+    "catchy_de": "In this symposium event, teams of up to two members will face a 50-minute coding challenge where they select one theme from up to 10 options revealed on the spot. Participants can choose to develop a project that integrates both front-end and back-end functionalities or focus exclusively on one aspect—either front-end or back-end. The submissions will be evaluated using separate marking.",
+    "ca": "captions",
+    "ru": "<li>● This is a team event (minimum 1 member, maximum 3 members in a team).</li><li>● Theme of the event will be <b>announced on spot.</b></li><li>● Designing prototype should be done in <b>figma</b> within a duration of <b>1 hour, and 5 mins to think over the theme.</b></li><li>● The participants should <b>bring their own devices</b> to sketch their design.</li><li>● The design should be original & <b>worked from scratch</b>.</li><li>● Plagiarism or Copy of work/template shall be prohibited.</li><li>● Decisions by the committee judges shall be final.</li>",
+    "re": "https://forms.gle/FHchmRa9gf6Le389A",
+    "co": "tel:+91904127446",
+    "po": "https://www.instagram.com/tech_vist_a"
+  },
+  {
+    "id": "9",
+    "ti": "Kings Gambit",
+    "act_ev": "Chess Tournament",
     "de": "main disc here",
     "catchy_de": "In this symposium event, teams of up to two members will face a 50-minute coding challenge where they select one theme from up to 10 options revealed on the spot. Participants can choose to develop a project that integrates both front-end and back-end functionalities or focus exclusively on one aspect—either front-end or back-end. The submissions will be evaluated using separate marking.",
     "ca": "captions",
@@ -13,8 +25,8 @@
   },
   {
     "id": "10",
-    "ti": "event name 2",
-    "act_ev": "actual event name 2",
+    "ti": "BGMI",
+    "act_ev": "BATTLE GROUNDS GAME",
     "de": "main disc here",
     "catchy_de": "A high-energy hackathon where participants will create innovative solutions using emerging technologies. Teams must think quickly and creatively under tight deadlines. Projects will be judged on originality, technical merit, and feasibility.",
     "ca": "captions",

@@ -2755,6 +2755,22 @@ transform: translate(-50%,-50%);
 
 
 /* When the first radio is checked, show e1 */
+#uiverse-rd-1:checked ~ #e1 {
+  display: block;
+}
+
+/* When the second radio is checked, show e2 */
+#uiverse-rd-2:checked ~ #e2 {
+  display: block;
+}
+
+/* When the third radio is checked, show e3 */
+#uiverse-rd-3:checked ~ #e3 {
+  display: block;
+}
+
+
+/* When the first radio is checked, show e1 */
 .dark-theme {
   --primary-color: #48a9ff;
   --background-color: #121212;

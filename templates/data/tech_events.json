@@ -37,14 +37,14 @@
   },
   {
     "id": "4",
-    "ti": "event name 4",
-    "act_ev": "actual event name 4",
-    "de": "main disc here",
-    "catchy_de": "Experience the thrill of competitive gaming in our eSports showdown. Whether you're a seasoned gamer or new to the scene, this event promises intense action, strategic gameplay, and valuable prizes for the top performers.",
-    "ca": "captions",
-    "ru": "<li>● The competition is structured in multiple knockout rounds.</li><li>● Registration requires a valid gaming ID.</li><li>● Teams can consist of up to 4 members.</li><li>● Prizes include gaming accessories and cash rewards for winners.</li>",
+    "ti": "Dev Dash",
+    "act_ev": "Coding Event",
+    "de": "In this event, participants will be coding on their preferred domain and a specific theme will be announced on event day(list of domains and themes added soon)",
+    "catchy_de": "In this event, participants will be coding on their preferred domain and a specific theme will be announced on event day(list of domains and themes added soon)",
+    "ca": "Race against the clock! Showcase your coding skills in this high-energy flash hackathon where creativity meets technical prowess.",
+    "ru": "<li>● Participants can work individually or in teams of up to 3 members.</li><li>● The coding duration will be 4 hours from theme announcement.</li><li>● All code must be original and written during the event.</li><li>● Submissions will be judged on creativity, functionality, and adherence to theme.</li><li>● Participants must bring their own laptops and development tools.</li>",
     "re": "https://forms.gle/event4registration",
-    "co": "91904127449",
+    "co": "917904127446",
     "po": "https://www.instagram.com/tech_vist_a"
   }
 ]
