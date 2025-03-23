@@ -502,7 +502,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
         {% for event in tech_events %}
         <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="{{ loop.index*100 }}" data-aos-anchor="#rapper-1">
-              {# <img class="imc" src="/static/images/DESIGNO-LIT-O_WEB.webp"> #}
+              {# <img loading="lazy" class="imc" src="/static/images/DESIGNO-LIT-O_WEB.webp"> #}
               
               <div class="imc" style="
                   display: flex;
@@ -521,8 +521,8 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                   </div>
 
         
-              <img class="imd d" src="/static/images/event ({{loop.index}}).webp">
-              <img class="imd c" src="/static/images/block.gif">
+              <img loading="lazy" class="imd d" src="/static/images/event ({{loop.index}}).webp">
+              <img loading="lazy" class="imd c" src="/static/images/block.gif">
               <div class="slogan">{{event.act_ev}}</div>
               <div class="descriptions">
                   <h1>{{event.ti  | capitalize }}</h1>
@@ -546,7 +546,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
   {% for event in nontech_events %}
         <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="{{loop.index*50}}" data-aos-anchor="#rapper-2">
-              {# <img class="imc" src="/static/images/DESIGNO-LIT-O_WEB.webp"> #}
+              {# <img loading="lazy" class="imc" src="/static/images/DESIGNO-LIT-O_WEB.webp"> #}
               <div class="imc" style="
                   display: flex;
                   justify-content: center;
@@ -564,8 +564,8 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                   </div>
 
         
-              <img class="imd d" src="/static/images/event ({{loop.index+4}}).webp">
-              <img class="imd c" src="/static/images/block.gif">
+              <img loading="lazy" class="imd d" src="/static/images/event ({{loop.index+4}}).webp">
+              <img loading="lazy" class="imd c" src="/static/images/block.gif">
               <div class="slogan">{{event.act_ev}}</div>
               <div class="descriptions">
                   <h1>{{event.ti  | capitalize }}</h1>
@@ -591,7 +591,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
   {% for event in online_events %}
         <div class="card" data-aos="fade-up" data-aos-duration="300" data-aos-delay="{{loop.index*50}}" data-aos-anchor="#rapper-3">
-              {# <img class="imc" src="/static/images/DESIGNO-LIT-O_WEB.webp"> #}
+              {# <img loading="lazy" class="imc" src="/static/images/DESIGNO-LIT-O_WEB.webp"> #}
               <div class="imc" style="
                   display: flex;
                   justify-content: center;
@@ -609,8 +609,8 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                   </div>
 
         
-              <img class="imd d" src="/static/images/event ({{loop.index+6}}).webp">
-              <img class="imd c" src="/static/images/block.gif">
+              <img loading="lazy" class="imd d" src="/static/images/event ({{loop.index+6}}).webp">
+              <img loading="lazy" class="imd c" src="/static/images/block.gif">
               <div class="slogan">{{event.act_ev}}</div>
               <div class="descriptions">
                   <h1>{{event.ti  | capitalize }}</h1>
@@ -641,7 +641,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
     <div
       class="bg-white py-2 rounded-md shadow-lg hover:cursor-pointer flex justify-center items-center gap-4 px-4"
     >
-      <img src="/static/images/about/sympo_logo.png" style="    width: 1.5rem;
+      <img loading="lazy" src="/static/images/about/sympo_logo.png" style="    width: 1.5rem;
     height: 1.5rem;"></img>
       <p>Events</p>
     </div>
@@ -947,72 +947,6 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 </section>
 
-<!--<div class="nii">
-<button class="collapsible" data-aos="zoom-in" data-aos-duration="400"><a style="width: 100%;position:absolute;left: 0;height:100%">Our Sponsors</a></button>
-
-    <div class="content">
-
-      <a class="spon" id="spoo" href="www.tata.com" target="_blank">
-        <img class="spon_m" src="/static/images/tata.webp">
-        <div class="spon_n">Tata</div>
-      </a>
-
-      <a class="spon" href="https://www.mygreentrends.in/" target="_blank">
-        <img class="spon_m" src="/static/images/gt2.webp">
-        <div class="spon_n">Greentrends</div>
-      </a>
-      <a class="spon" href="https://www.techiegen.com/" target="_blank">
-        <img class="spon_m" src="/static/images/tg1.webp">
-        <div class="spon_n">Techiegen</div>
-      </a>
-      <a class="spon" href="https://www.chennaifoodstreets.com/" target="_blank">
-        <img class="spon_m" src="/static/images/cfs2.webp">
-        <div class="spon_n">Chennai Food Street</div>
-      </a>
-      <a class="spon" href="http://www.dnhindia.com/" target="_blank">
-        <img class="spon_m" src="/static/images/d&h.webp">
-        <div class="spon_n">D&H</div>
-      </a>
-      <a class="spon" href="https://www.marketicsandmarketers.com/" target="_blank">
-        <img class="spon_m" src="/static/images/mnm2.webp">
-        <div class="spon_n">Marketics & Marketers</div>
-      </a>
-      <a class="spon">
-        <img class="spon_m" src="/static/images/ct.webp">
-        <div class="spon_n">Cool Track</div>
-      </a>
-      <a class="spon" >
-        <img class="spon_m" src="/static/images/cg.webp">
-        <div class="spon_n">Cool Gravity</div>
-      </a>
-      <a class="spon" id="spuuu" href="https://www.tactii.com/" target="_blank">
-        <img class="spon_m" src="/static/images/needle.webp">
-        <div class="spon_n">tactii</div>
-      </a>
-
-    </div>
-    
-
-    <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-      
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          
-          if (content.style.maxHeight){
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-          } 
-        });
-      }
-      </script>
-    -->
-  
-      <!-- <div class="topic-head aaaa"  data-aos="zoom-in" data-aos-duration="400" >Credits</div> -->
 
 
 <section class="thunder">
@@ -1620,7 +1554,7 @@ function copyText(text) {
       </div>
        <div class="button-holder">
           <div class="btn-back"></div> 
-          <img class="svg" src="/static/images/about/logo_svg.png"></img>
+          <img loading="lazy" class="svg" src="/static/images/about/logo_svg.png"></img>
         <p>Register</p>
       </div>
     </button>
@@ -1636,13 +1570,13 @@ function copyText(text) {
     transform: translate(-50%, -50%) translate3d(0px, 0px, 0px);
     top: 344px;
     
-    width: 491.6px;
+    width: 349.6px;
     height: 533.4px;
     min-width: 349px;
     z-index: 1001;
 ">
   <div class="window-top">
-    <p class="title">Google Form</p>
+    <p class="title">Registration Form</p>
     <span class="buttons">
       <button class="round yellow" style" transition: height 0.7s ease;">
         <svg viewBox="0 0 10.2 1"><rect height="1" width="10.2"/></svg>
@@ -1657,7 +1591,7 @@ function copyText(text) {
   </div>
   <hr>
   <div class="window-content">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeIt970f1zhBiE6vyuaePCOn6CcEYv1U2OP_SI6Kojgj76rPw/viewform?embedded=true"></iframe>
+    <iframe loading="lazy" type="module" src="https://docs.google.com/forms/d/e/1FAIpQLSeIt970f1zhBiE6vyuaePCOn6CcEYv1U2OP_SI6Kojgj76rPw/viewform?embedded=true"></iframe>
   </div>
   <div class="resize-handler resize-right"></div>
   <div class="resize-handler resize-left"></div>
