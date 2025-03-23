@@ -101,6 +101,21 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   --> 
+  <style>
+    /* Fade-out animation: remains fully visible until 500ms delay, then fades out over 0.2s */
+    .loader {
+      animation: fadeOut 2s ease-in-out 0s forwards;
+    }
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+    }
+  </style>
+  
   <div class="loader">
     <div class="circle">
       <div class="dot"></div>
@@ -119,6 +134,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
       <div class="outline"></div>
     </div>
   </div>
+  
 
   <script>
     let prevEle;
@@ -138,7 +154,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
     window.addEventListener('load', getEvent)
   </script>
 
-  <script>
+  {# <script>
     window.addEventListener('load', function() {
       setTimeout(() => {
         const loader = document.querySelector('.loader');
@@ -147,7 +163,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
         loader.remove(); 
       }, 500);
     });
-  </script>
+  </script> #}
 
 
     <header>
@@ -336,7 +352,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
       // If the count down is finished, write some text
       if (distance < 0) {
         clearInterval(x);
-        ctt = "The Event Was Grand !";
+        ctt = "The Event will be Grand !";
       }
     }, 20000);
     
@@ -428,7 +444,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 <section class="section s1" id="About">
   <div class="about" style="overflow-x: hidden;">
-    <div class="topic-head"  data-aos="zoom-in" data-aos-duration="400" >About</div>
+    <div class="topic-head"  data-aos="zoom-in" data-aos-duration="100" >About</div>
     <div class="topic" >
       <div class="topi t0" >
         <div class="topic-img-con " data-aos="fade-right"  data-aos-duration="700" >
@@ -625,22 +641,8 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
     <div
       class="bg-white py-2 rounded-md shadow-lg hover:cursor-pointer flex justify-center items-center gap-4 px-4"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 18 14"
-        height="25"
-        width="25"
-      >
-        <path
-          fill="#FFA000"
-          d="M16.2 1.75H8.1L6.3 0H1.8C0.81 0 0 0.7875 0 1.75V12.25C0 13.2125 0.81 14 1.8 14H15.165L18 9.1875V3.5C18 2.5375 17.19 1.75 16.2 1.75Z"
-        ></path>
-        <path
-          fill="#FFCA28"
-          d="M16.2 2H1.8C0.81 2 0 2.77143 0 3.71429V12.2857C0 13.2286 0.81 14 1.8 14H16.2C17.19 14 18 13.2286 18 12.2857V3.71429C18 2.77143 17.19 2 16.2 2Z"
-        ></path>
-      </svg>
+      <img src="/static/images/about/sympo_logo.png" style="    width: 1.5rem;
+    height: 1.5rem;"></img>
       <p>Events</p>
     </div>
   
@@ -692,7 +694,10 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
             Technical Events</li>
         <div class="hover-show" >
           {% for event in tech_events%}
-        <li class="pl-8 py-1">📄 {{event.ti}}</li>
+        <li class="pl-8 py-1" onclick='reg_view("ev{{loop.index}}",true)'><button class="events-action-btn">
+          <span id='ev{{loop.index}}-ind' class="events-action-indicator" ></span>
+          {{event.ti}}
+        </button> </span></li>
         {%endfor%}
       </div>
         <li class="py-1"><!-- From Uiverse.io by kheshore --> 
@@ -737,7 +742,10 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
  Non-Technical Events</li>
         <div class="hover-show" >
           {% for event in nontech_events%}
-        <li class="pl-8 py-1">📄 {{event.ti}}</li>
+        <li class="pl-8 py-1" onclick='reg_view("ev{{loop.index}}",true)'><button class="events-action-btn">
+          <span id='ev{{loop.index}}-ind' class="events-action-indicator" ></span>
+          {{event.ti}}
+        </button> </span></li>
         {%endfor%}
         </div>
         <li class="py-1"><!-- From Uiverse.io by kheshore --> 
@@ -782,13 +790,16 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
  Online Event</li>
         <div class="hover-show" >
           {% for event in online_events%}
-          <li class="pl-8 py-1">📄 {{event.ti}}</li>
+          <li class="pl-8 py-1" onclick='reg_view("ev{{loop.index}}",true)'><button class="events-action-btn">
+          <span id='ev{{loop.index}}-ind' class="events-action-indicator" ></span>
+          {{event.ti}}
+        </button> </span></li>
           {%endfor%}        </div>
       </ul>
     </div>
   </div>
   
-  <div class="scrolli">
+  <div class="boir-scrolli scrolli">
 <div class="cls" id="x" onClick="reg_view(this.id)"><a>x</a></div>
 <div class="even_name" id="reg_ti">--Auto Title Here--</div>
 <div class="even_slog" id="reg_slog">--Auto Slogan Here--</div>
@@ -813,14 +824,16 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 <div class="botbut">
  
-  <div>
-  <a class="b1" id="reg_con" target="_blank" href="">Contact</a>
-  <a class="b2" href="https://g.page/CITCollege" target="_blank">Venue</a>
+  <div style='    display: flex
+;
+    gap: 3px;'>
+  <a class="b1" id="reg_con" data-phn="" onclick='copyText(this.dataset.phn); alert("Contact Number Copied")'>Contact</a>
+  <a class="b2" href="https://maps.app.goo.gl/sixLgtUUPkYtWvps6" target="_blank">Venue</a>
   <a class="b4" id="reg_po" href="https://www.instagram.com/t.a.l.o.s_cit" target="_blank">Poster</a>
   <a class="b5" id="reg_sha" onclick="return copyTextFromElement();"   href="">Share</a>
   </div>
   
-  <a class="b3" id="reg_reg" href="https://jesvijonathan.github.io/talos-website" target="_blank">Register</a>
+  <a class="b3" id="reg_reg" onclick="openWindow()" target="_blank">Register</a>
   
    </div>
 </div>
@@ -1290,6 +1303,16 @@ $(document).ready(function(){
 
 
 <script> 
+  function scrollIt(toId,offset=50){
+
+    const elementPosition =  document.querySelector("#"+toId).getBoundingClientRect().top + window.scrollY;
+    const offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
+  }
 
   function cls_b(to=""){
     
@@ -1304,28 +1327,23 @@ $(document).ready(function(){
       if (to!==""){
         history.replaceState({},"","/");
         window.location = "#"+to;
-        const offset = 50; // Adjust based on your navbar height
-
-        const elementPosition =  document.querySelector("#"+to).getBoundingClientRect().top + window.scrollY;
-        const offsetPosition = elementPosition - offset;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth"
-        });
+        scrollIt(50,to);
+        
 
 
       }
     } 
 
     let boir_closing;
-  function reg_view(clicked_id){
-
-    document.getElementById("blurbg").style.display = "none";
-    $('.blurbg').css({zindex:"-15"});
+  function reg_view(clicked_id,swth=false){
+    {# console.log(clicked_id,swth); #}
+    {# document.getElementById("blurbg").style.display = "none";
+    $('.blurbg').css({zindex:"-15"}); #}
             var myCover = document.querySelector("#boir");
+
+
             
-            
+                      
             
                 var de =  "description";
                 var ti =  "title";
@@ -1363,24 +1381,41 @@ $(document).ready(function(){
                   document.getElementById('reg_ti').innerHTML = ti;
                   document.getElementById('reg_slog').innerHTML = ca;
                   document.getElementById('reg_rules').innerHTML = ru;
-                  $('#reg_reg').attr('href', re);
-                  $('#reg_con').attr('href', co);  
+                  {# $('#reg_reg').attr('href', re); #}
+                  $('#reg_con').attr('data-phn', co);  
                   $('#reg_sha').attr('href', li);
                   $('#reg_po').attr('href', po);
 
                   
                   //$('#reg_po').attr('href', po); 
+              
+              if (myCover.classList.contains("up") && !swth) {
+                const elements = document.querySelectorAll('.events-hoverer');
 
-              if (myCover.classList.contains("up")) {
+            // Loop through the NodeList and set the opacity
+            elements.forEach(element => {
+              element.classList.remove('events-hoverer');  // Adjust the value as needed (0.0 to 1.0)
+            });
                 myCover.classList.remove("up");  
                 $('.boir').hide(0); 
                 document.getElementById("blurbg").style.display = "none";
                 $('.blurbg').css({zindex:"-15"});
                 // history.pushState({}, "", url);
                 history.pushState({},"","/");
-                document.querySelector("#"+boir_closing).scrollIntoView({ behavior: "smooth" });
+                scrollIt(boir_closing,600)
               } else {
                 myCover.classList.add("up"); 
+                const elements = document.querySelectorAll('.event-hoverer');
+
+            // Loop through the NodeList and set the opacity
+            elements.forEach(element => {
+              element.classList.remove('event-hoverer');  // Adjust the value as needed (0.0 to 1.0)
+            });
+            try{
+                document.querySelector("#"+clicked_id+"-ind").classList.add("event-hoverer");
+            }catch{
+              
+            }
                 $('.boir').css({zindex:"20"});  
                 $('.boir').show(0);
                 $('.boir').css({visibility:"visible"});  
@@ -1391,8 +1426,8 @@ $(document).ready(function(){
 //popup shiz
 function copyTextFromElement() {
   //let element = document.getElementById(elementID); //select the element
-  var copyTex = document.getElementById("reg_sha").href;
-  //window.location.href;
+  var copyTex = window.location.href;
+  
   copyText(copyTex); //use the copyText function below
   alert('Copied Shareable Event Link !');
   return false;
@@ -1423,13 +1458,18 @@ function copyText(text) {
     document.addEventListener('click',clickEffect);
 
    
-
+    let reg;
     document.addEventListener("DOMContentLoaded", function(event) {
-      document.documentElement.setAttribute("data-theme", "light"); }); 
+      document.documentElement.setAttribute("data-theme", "light"); 
+    
       const container = document.querySelector('.uiverse-container');
       const d_down = document.querySelector('#d-down');
-      d_down.classList.add("dark");
+      reg = document.querySelector("#reg-btn");
+      console.log(reg);
+      d_down.classList.add("dark"); 
       container.classList.add("dark");
+      reg.classList.add("dark-theme");
+
       
       
       var themeSwitcher = document.getElementById("theme-switcher");
@@ -1456,8 +1496,15 @@ function copyText(text) {
             d_down.classList.remove('dark');
             d_down.classList.add('light');
           };
+          if (reg.classList.contains('light-theme')) {
+            reg.classList.remove('light-theme');
+            reg.classList.add('dark-theme');
+          } else {
+            reg.classList.remove('dark');
+            reg.classList.add('light-theme');
+          };
       }
-
+}); 
         
         var cur = document.getElementById("cu");
         cur.onclick = function() {
@@ -1564,23 +1611,22 @@ function copyText(text) {
 </script> #}
 
 <!-- From Uiverse.io by Gaurang7717 --> 
- <div class="dark-theme">
-<div class="light-button" style="position: fixed; bottom: 7vh; left: 3vw;">
-  <button id="openWindowBtn" class="bt">
-    <div class="light-holder">
-      <div class="dot"></div>
-      <div class="light"></div>
-    </div>
-    <div class="button-holder">
-      <svg height="1em" viewBox="0 0 448 512">
-        <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
-      </svg>
-      <p>Register</p>
-    </div>
-  </button>
-</div>
-</div>
-
+<div id="reg-btn" class="dark-theme">
+  <div class="light-button" style="position: fixed; bottom: 8vh; left: 3vw;">
+    <button id="openWindowBtn" class="bt">
+      <div class="light-holder">
+        <div class="dot"></div>
+        <div class="light"></div>
+      </div>
+       <div class="button-holder">
+          <div class="btn-back"></div> 
+          <img class="svg" src="/static/images/about/logo_svg.png"></img>
+        <p>Register</p>
+      </div>
+    </button>
+  </div>
+  </div>
+  
 
 
 
@@ -1589,7 +1635,7 @@ function copyText(text) {
     opacity: 1;
     transform: translate(-50%, -50%) translate3d(0px, 0px, 0px);
     top: 344px;
-    left: 27vw;
+    
     width: 491.6px;
     height: 533.4px;
     min-width: 349px;
@@ -1617,28 +1663,12 @@ function copyText(text) {
   <div class="resize-handler resize-left"></div>
   <div class="resize-handler resize-bottom"></div>
   <div class="resize-handler resize-corner"></div>
+  
 </div>
 
-<!-- Keep your existing script as is -->
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const myWindow = document.getElementById('myWindow');
-    const openWindowBtn = document.getElementById('openWindowBtn');
-    let isDragging = false;
-    let isResizing = false;
-    let resizeDir = '';
-    let startX, startY, startW, startH, startT, startL;
-    
-    // Button to open window
-    openWindowBtn.addEventListener('click', () => {
-      // Reset position and size before showing
-      {# myWindow.style.left = '50%';
-      myWindow.style.top = '50%';
-      myWindow.style.transform = 'translate(-50%, -50%)';
-      myWindow.style.width = '600px'; // Default width
-      myWindow.style.height = '400px'; // Default height #}
-      
+  function openWindow(){
       // Clear any maximized/minimized states
       myWindow.classList.remove('maximized', 'minimized');
       
@@ -1648,24 +1678,36 @@ function copyText(text) {
       delete myWindow.dataset.top;
       delete myWindow.dataset.left;
       delete myWindow.dataset.transform;
-    
+  
       myWindow.style.display = 'block';
       
       // Add animation for smooth appearance
       myWindow.style.opacity = '0';
       myWindow.style.transform = 'translate(-50%, -60%)';
-    
+  
       setTimeout(() => {
         myWindow.style.transition = 'opacity 0.3s, transform 0.3s';
         myWindow.style.opacity = '1';
         myWindow.style.transform = 'translate(-50%, -50%)';
-    
+  
         setTimeout(() => {
           myWindow.style.transition = '';
         }, 300);
       }, 10);
-    });
+    }
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    const myWindow = document.getElementById('myWindow');
+    const openWindowBtn = document.getElementById('openWindowBtn');
+    let isDragging = false;
+    let isResizing = false;
+    let resizeDir = '';
+    let startX, startY, startW, startH, startT, startL;
     
+    // Button to open window
+    if (openWindowBtn) {
+      openWindowBtn.addEventListener('click',openWindow);
+    }
     
     // Use requestAnimationFrame for smoother updates
     let animationId = null;
@@ -1685,11 +1727,21 @@ function copyText(text) {
       myWindow.style.height = `${height}px`;
     }
     
+    function getEventCoordinates(e) {
+      // Handle both mouse and touch events
+      if (e.touches && e.touches.length > 0) {
+        return { clientX: e.touches[0].clientX, clientY: e.touches[0].clientY };
+      } else {
+        return { clientX: e.clientX, clientY: e.clientY };
+      }
+    }
+    
     function handleMove(e) {
       if (!isDragging) return;
       
-      const dx = e.clientX - startX;
-      const dy = e.clientY - startY;
+      const coords = getEventCoordinates(e);
+      const dx = coords.clientX - startX;
+      const dy = coords.clientY - startY;
       
       if (animationId) {
         cancelAnimationFrame(animationId);
@@ -1701,13 +1753,17 @@ function copyText(text) {
         updateWindowPosition(newLeft, newTop);
         animationId = null;
       });
+      
+      // Prevent default to avoid scrolling while dragging on mobile
+      e.preventDefault();
     }
     
     function handleResize(e) {
       if (!isResizing) return;
       
-      const dx = e.clientX - startX;
-      const dy = e.clientY - startY;
+      const coords = getEventCoordinates(e);
+      const dx = coords.clientX - startX;
+      const dy = coords.clientY - startY;
       const vw = window.innerWidth;
       const vh = window.innerHeight;
       
@@ -1730,15 +1786,25 @@ function copyText(text) {
         updateWindowSize(newWidth, newHeight);
         animationId = null;
       });
+      
+      // Prevent default to avoid scrolling while resizing on mobile
+      e.preventDefault();
     }
     
-    // Handle window dragging
-    myWindow.querySelector('.window-top').addEventListener('mousedown', e => {
+    // Handle window dragging - MOUSE EVENTS
+    const windowTop = myWindow.querySelector('.window-top');
+    if (windowTop) {
+      windowTop.addEventListener('mousedown', startDragging);
+      windowTop.addEventListener('touchstart', startDragging, { passive: false });
+    }
+    
+    function startDragging(e) {
       if (e.target.closest('.round') || e.target.closest('.resize-handler')) return;
       
       isDragging = true;
-      startX = e.clientX;
-      startY = e.clientY;
+      const coords = getEventCoordinates(e);
+      startX = coords.clientX;
+      startY = coords.clientY;
       
       // Get current position - handle both centered and absolute positioning
       const rect = myWindow.getBoundingClientRect();
@@ -1753,18 +1819,24 @@ function copyText(text) {
       }
       
       document.addEventListener('mousemove', handleMove);
+      document.addEventListener('touchmove', handleMove, { passive: false });
       document.addEventListener('mouseleave', stopDragging);
       
       // Disable iframe pointer events during drag
       const iframe = myWindow.querySelector('iframe');
       if (iframe) iframe.style.pointerEvents = 'none';
-    });
+      
+      // Prevent default to stop text selection, etc.
+      e.preventDefault();
+    }
     
     function stopDragging() {
       isDragging = false;
       isResizing = false;
       document.removeEventListener('mousemove', handleMove);
+      document.removeEventListener('touchmove', handleMove);
       document.removeEventListener('mousemove', handleResize);
+      document.removeEventListener('touchmove', handleResize);
       document.removeEventListener('mouseleave', stopDragging);
       
       // Re-enable iframe pointer events
@@ -1773,17 +1845,19 @@ function copyText(text) {
     }
     
     document.addEventListener('mouseup', stopDragging);
+    document.addEventListener('touchend', stopDragging);
     
     // Handle window resizing
     function initResize(dir) {
-      return e => {
+      return function(e) {
         e.preventDefault();
         isResizing = true;
         resizeDir = dir;
         
+        const coords = getEventCoordinates(e);
         const rect = myWindow.getBoundingClientRect();
-        startX = e.clientX;
-        startY = e.clientY;
+        startX = coords.clientX;
+        startY = coords.clientY;
         startW = rect.width;
         startH = rect.height;
         startT = rect.top;
@@ -1797,6 +1871,7 @@ function copyText(text) {
         }
         
         document.addEventListener('mousemove', handleResize);
+        document.addEventListener('touchmove', handleResize, { passive: false });
         document.addEventListener('mouseleave', stopDragging);
         
         // Disable iframe pointer events during resize
@@ -1805,70 +1880,116 @@ function copyText(text) {
       };
     }
     
-    myWindow.querySelector('.resize-right').addEventListener('mousedown', initResize('w'));
-    myWindow.querySelector('.resize-left').addEventListener('mousedown', initResize('w'));
-    myWindow.querySelector('.resize-bottom').addEventListener('mousedown', initResize('h'));
-    myWindow.querySelector('.resize-corner').addEventListener('mousedown', initResize('wh'));
+    // Add both mouse and touch event listeners for resize handlers
+    const resizeHandlers = {
+      '.resize-right': 'w',
+      '.resize-left': 'w',
+      '.resize-bottom': 'h',
+      '.resize-corner': 'wh'
+    };
     
-    // Handle window buttons
-   // Handle window buttons
-document.addEventListener('click', e => {
-  const win = e.target.closest('.window');
-  const btn = e.target.closest('.round');
-  if (!win || !btn) return;
-  
-  if (btn.classList.contains('red')) {
-    // Close window with animation
-    win.style.transition = 'opacity 0.3s, transform 0.3s';
-    win.style.opacity = '0';
-    win.style.transform = 'translate(-50%, -60%)';
-
-    setTimeout(() => {
-      win.style.display = 'none';
-      // Reset position after closing
-      win.style.left = '50%';
-      win.style.top = '50%';
-      win.style.transform = 'translate(-50%, -50%)';
-      win.style.transition = '';
-    }, 300);
-  }else if (btn.classList.contains('green')) {
-    if (win.classList.toggle('maximized')) {
-      const rect = win.getBoundingClientRect();
-      win.dataset.width = win.style.width || `${rect.width}px`;
-      win.dataset.height = win.style.height || `${rect.height}px`;
-      win.dataset.transform = win.style.transform;
-      win.dataset.left = win.style.left;
-      win.dataset.top = win.style.top;
-  
-      win.style.width = '100%';
-      win.style.height = '100%';
-      win.style.left = '0';
-      win.style.top = '0';
-      win.style.transform = 'none';
-    } else {
-      win.style.width = win.dataset.width;
-      win.style.height = win.dataset.height;
-      win.style.left = win.dataset.left;
-      win.style.top = win.dataset.top;
-      win.style.transform = win.dataset.transform;
-      
-      // Ensure window stays within viewport
-      const rect = win.getBoundingClientRect();
-      const viewportWidth = window.innerWidth;
-      const viewportHeight = window.innerHeight;
-  
-      if (rect.right > viewportWidth || rect.bottom > viewportHeight) {
-        win.style.left = '50%';
-        win.style.top = '50%';
-        win.style.transform = 'translate(-50%, -50%)';
+    for (const [selector, dir] of Object.entries(resizeHandlers)) {
+      const element = myWindow.querySelector(selector);
+      if (element) {
+        const handler = initResize(dir);
+        element.addEventListener('mousedown', handler);
+        element.addEventListener('touchstart', handler, { passive: false });
       }
     }
-  } else if(btn.classList.contains('yellow')){
-
-    win.style.height="56.4px";
-
-  }
-});
+    
+    // Handle window buttons
+    document.addEventListener('click', handleButtonClick);
+    document.addEventListener('touchend', function(e) {
+      // Convert touchend to click for button handling
+      const btn = e.target.closest('.round');
+      if (btn) {
+        handleButtonClick(e);
+      }
+    });
+    
+    function handleButtonClick(e) {
+      const win = e.target.closest('.window');
+      const btn = e.target.closest('.round');
+      if (!win || !btn) return;
+      
+      if (btn.classList.contains('red')) {
+        // Close window with animation
+        win.style.transition = 'opacity 0.3s, transform 0.3s';
+        win.style.opacity = '0';
+        win.style.transform = 'translate(-50%, -60%)';
+    
+        setTimeout(() => {
+          win.style.display = 'none';
+          // Reset position after closing
+          win.style.left = '50%';
+          win.style.top = '50%';
+          win.style.transform = 'translate(-50%, -50%)';
+          win.style.transition = '';
+        }, 300);
+      } else if (btn.classList.contains('green')) {
+        if (win.classList.toggle('maximized')) {
+          const rect = win.getBoundingClientRect();
+          win.dataset.width = win.style.width || `${rect.width}px`;
+          win.dataset.height = win.style.height || `${rect.height}px`;
+          win.dataset.transform = win.style.transform;
+          win.dataset.left = win.style.left;
+          win.dataset.top = win.style.top;
+      
+          win.style.width = '100%';
+          win.style.height = '100%';
+          win.style.left = '0';
+          win.style.top = '0';
+          win.style.transform = 'none';
+        } else {
+          win.style.width = win.dataset.width;
+          win.style.height = win.dataset.height;
+          win.style.left = win.dataset.left;
+          win.style.top = win.dataset.top;
+          win.style.transform = win.dataset.transform;
+          
+          // Ensure window stays within viewport
+          const rect = win.getBoundingClientRect();
+          const viewportWidth = window.innerWidth;
+          const viewportHeight = window.innerHeight;
+      
+          if (rect.right > viewportWidth || rect.bottom > viewportHeight) {
+            win.style.left = '50%';
+            win.style.top = '50%';
+            win.style.transform = 'translate(-50%, -50%)';
+          }
+        }
+      } else if (btn.classList.contains('yellow')) {
+        if (win.classList.toggle('minimized')) {
+          const rect = win.getBoundingClientRect();
+          win.dataset.width = win.style.width || `${rect.width}px`;
+          win.dataset.height = win.style.height || `${rect.height}px`;
+          win.dataset.transform = win.style.transform;
+          win.dataset.left = win.style.left;
+          win.dataset.top = win.style.top;
+      
+          win.style.height = '56.4px';
+          win.style.width = '0px';
+          win.style.bottom = '0';
+        } else {
+          win.style.width = win.dataset.width;
+          win.style.height = win.dataset.height;
+          win.style.left = win.dataset.left;
+          win.style.top = win.dataset.top;
+          win.style.transform = win.dataset.transform;
+          
+          // Ensure window stays within viewport
+          const rect = win.getBoundingClientRect();
+          const viewportWidth = window.innerWidth;
+          const viewportHeight = window.innerHeight;
+      
+          if (rect.right > viewportWidth || rect.bottom > viewportHeight) {
+            win.style.left = '50%';
+            win.style.top = '50%';
+            win.style.transform = 'translate(-50%, -50%)';
+          }
+        }
+      }
+    }
     
     // Handle window bounds on resize
     let resizeTimeout;
@@ -1889,4 +2010,12 @@ document.addEventListener('click', e => {
       }, 50);
     });
   });
+</script>
+
+<script>
+  setTimeout(() =>{
+    const loader = document.querySelector('.loader');
+    loader.remove();
+  },3000);
+   
 </script>

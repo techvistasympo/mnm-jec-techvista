@@ -297,11 +297,15 @@
     padding-right: 6%;
     margin-top:20%;
 }
+.boir-scrolli{
+  margin-top: 6vh;
+  height: 77%;
+  width: 100%;
+}
 .scrolli {
   overflow-y: scroll;
   overscroll-behavior: contain;
-  height: 82%;
-  width: 100%;
+  
 }
 .scrolli::-webkit-scrollbar {
   width: 4px;
