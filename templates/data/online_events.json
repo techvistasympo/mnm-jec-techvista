@@ -13,12 +13,39 @@
   },
   {
     "id": "11",
-    "ti": "Kings Gambit",
+    "ti": "Rivals Gambit",
     "act_ev": "Chess Tournament",
-    "de": "main disc here",
-    "catchy_de": "In this symposium event, teams of up to two members will face a 50-minute coding challenge where they select one theme from up to 10 options revealed on the spot. Participants can choose to develop a project that integrates both front-end and back-end functionalities or focus exclusively on one aspect—either front-end or back-end. The submissions will be evaluated using separate marking.",
-    "ca": "captions",
-    "ru": "",
+    "de": "Prepare for an intense online chess battle in our RIVALS GAMBIT. This tournament features thrilling rounds of rapid chess, designed to test your strategic thinking and speed. Compete against fellow chess enthusiasts, showcase your skills, and claim victory in this online arena.",
+    "catchy_de": "Ready for a digital chess duel? Join RIVALS GAMBIT for two rounds of strategic warfare! From calculated rapid games to lightning-fast blitz battles, only the sharpest minds will prevail. Even if you don't take home the crown, you'll experience the thrill of online competition and the joy of playing chess!",
+    "ca": "Join the battlefield of minds in this chess showdown!",
+    "ru": ""Round 1: <b>Rapid Rumble</b><br><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;Format: 10 minutes + 2 seconds increment per move (10+2).<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;Description: Players will be paired randomly on Lichess and engage in a single rapid game.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;Focus on strategic planning and calculated moves to secure a win and advance to the final round.<br><br>
+
+          Round 2: <b>Blitz Blitzkrieg</b><br><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;Format: 5 minutes + 2 seconds increment per move (3+2).<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;Description: The top performers from Round 1 will face off in a fast-paced blitz game.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;Quick thinking and rapid execution are crucial. One mistake can change the entire outcome.<br><br>
+
+          Extra (<b>Tie-Breaker</b>) Round:<br><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;Format: 1 minute + 0 seconds increment per move (1+0).<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;Description: In case of a tie in the final standings, a single bullet game will determine the ultimate champion.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;This is for the ultimate test of speed and instinct.<br><br>
+
+          No matter who wins, this event is all about enjoying the game, testing your skills, and making online chess connections!<br><br>
+
+          <b>RULES:</b><br>
+          • This is an individual online tournament held on Lichess.org.<br>
+          • Participants must have a Lichess account.<br>
+          • The tournament will consist of two primary rounds: Rapid and Blitz, and a possible Tie-breaker round.<br>
+          • Pairings will be determined by the Lichess tournament platform.<br>
+          • The players must join the lichess team group.<br>
+          • Participants must adhere to Lichess's fair play policy.<br>
+          • Any form of cheating or unsportsmanlike conduct will result in disqualification.<br>
+          • Judges’ decisions will be final and binding.<br>
+          • Participants must join the specified Lichess tournament link at the specified time.<br>
+          • Incase of any net issues, it may be conducted in offline mode.",",
     "re": "https://forms.gle/FHchmRa9gf6Le389A",
     "co": "tel:+91904127446",
     "po": "https://www.instagram.com/tech_vist_a"
