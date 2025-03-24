@@ -25,17 +25,20 @@
       "po": "https://www.instagram.com/tech_vist_a"
     
   },
-  {
-    "id": "12",
-        "ti": "ESPORTS - BGMI",
-        "act_ev": "Battlegrounds Mobile India (BGMI)",
-        "de": "Get ready for the ultimate battle royale showdown at TECHVISTA 2025! Compete against top squads, showcase your strategy, teamwork, and combat skills, and fight for glory and exciting prizes. Whether you're a pro or a passionate gamer, this electrifying esports event is your chance to dominate the battlegrounds!",
-        "catchy_de": "Gear up for the most thrilling BGMI tournament at TECHVISTA 2025! Compete against top squads, showcase your strategy, and battle for exciting prizes!",
-        "ca": "Battle Royale Madness!",
-        "ru": "<li>Fair Play & Integrity – Any form of cheating, hacking, teaming, or exploiting game bugs/glitches is strictly prohibited and will result in immediate disqualification. Device Restrictions – The use of emulators, unauthorized third-party apps, or cheat tools is not allowed and will lead to disqualification. Respect & Sportsmanship – Players must maintain respectful conduct at all times. Abusive language, offensive usernames, inappropriate behavior, or taunting knocked-out players will result in penalties or disqualification. Match Conduct & Connectivity – Players are responsible for ensuring a stable internet connection. Matches will not be restarted due to individual lag, disconnections, or technical issues on a player's end. Play fair, follow the rules, and enjoy the competition!</li>",
-        "re": "https://forms.gle/FHchmRa9gf6Le389A",
-        "co": "7448324936, 6379499603",
-    "po": "https://www.instagram.com/tech_vist_a"
-  }
+  
+    {
+      "id": "12",
+      "ti": "ESPORTS - BGMI",
+      "act_ev": "Battlegrounds Mobile India (BGMI)",
+      "de": "Get ready for the ultimate battle royale showdown at TECHVISTA 2025! Compete against top squads, showcase your strategy, teamwork, and combat skills, and fight for glory and exciting prizes. Whether you're a pro or a passionate gamer, this electrifying esports event is your chance to dominate the battlegrounds!",
+      "catchy_de": "Gear up for the most thrilling BGMI tournament at TECHVISTA 2025! Compete against top squads, showcase your strategy, and battle for exciting prizes!",
+      "ca": "Battle Royale Madness!",
+      "ru": "<li><strong>Fair Play & Integrity</strong> – Any form of cheating, hacking, teaming, or exploiting game bugs/glitches is strictly prohibited and will result in immediate disqualification.</li><br><li><strong>Device Restrictions</strong> – The use of emulators, unauthorized third-party apps, or cheat tools is not allowed and will lead to disqualification.</li><br><li><strong>Respect & Sportsmanship</strong> – Players must maintain respectful conduct at all times. Abusive language, offensive usernames, inappropriate behavior, or taunting knocked-out players will result in penalties or disqualification.</li><br><li><strong>Match Conduct & Connectivity</strong> – Players are responsible for ensuring a stable internet connection. Matches will not be restarted due to individual lag, disconnections, or technical issues on a player's end.</li><br><li>Play fair, follow the rules, and enjoy the competition!</li><br>",
+  "re": "https://forms.gle/FHchmRa9gf6Le389A",
+      "co": "7448324936, 6379499603",
+      "po": "https://www.instagram.com/tech_vist_a"
+ 
+    }
+           
   
 ]
