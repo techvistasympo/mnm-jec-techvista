@@ -1,6 +1,6 @@
 [
   {
-    "id": "9",
+    "id": "10",
     "ti": "Free Fire",
     "act_ev": "WAR SIMULATION",
     "de": "main disc here",
@@ -12,7 +12,7 @@
     "po": "https://www.instagram.com/tech_vist_a"
   },
   {
-    "id": "9",
+    "id": "11",
     "ti": "Kings Gambit",
     "act_ev": "Chess Tournament",
     "de": "main disc here",
@@ -24,15 +24,15 @@
     "po": "https://www.instagram.com/tech_vist_a"
   },
   {
-    "id": "10",
-    "ti": "BGMI",
-    "act_ev": "BATTLE GROUNDS GAME",
-    "de": "main disc here",
-    "catchy_de": "A high-energy hackathon where participants will create innovative solutions using emerging technologies. Teams must think quickly and creatively under tight deadlines. Projects will be judged on originality, technical merit, and feasibility.",
-    "ca": "captions",
-    "ru": "<li>● Open to both individual and team participation.</li><li>● The challenge lasts 60 minutes with surprise elements introduced during the event.</li><li>● Participants must deliver a working prototype by the end of the session.</li><li>● Judging criteria include innovation, design, and functionality.</li>",
-    "re": "https://forms.gle/event2registration",
-    "co": "tel:+91904127447",
+    "id": "12",
+        "ti": "ESPORTS - BGMI",
+        "act_ev": "Battlegrounds Mobile India (BGMI)",
+        "de": "A high-intensity battle royale tournament where players compete in squads for ultimate victory.",
+        "catchy_de": "Gear up for the most thrilling BGMI tournament at TECHVISTA 2025! Compete against top squads, showcase your strategy, and battle for exciting prizes!",
+        "ca": "Battle Royale Madness!",
+        "ru": "<li>Fair Play & Integrity – Any form of cheating, hacking, teaming, or exploiting game bugs/glitches is strictly prohibited and will result in immediate disqualification. Device Restrictions – The use of emulators, unauthorized third-party apps, or cheat tools is not allowed and will lead to disqualification. Respect & Sportsmanship – Players must maintain respectful conduct at all times. Abusive language, offensive usernames, inappropriate behavior, or taunting knocked-out players will result in penalties or disqualification. Match Conduct & Connectivity – Players are responsible for ensuring a stable internet connection. Matches will not be restarted due to individual lag, disconnections, or technical issues on a player's end. Play fair, follow the rules, and enjoy the competition!</li>",
+        "re": "",
+        "co": "7448324936, 6379499603",
     "po": "https://www.instagram.com/tech_vist_a"
   }
   
