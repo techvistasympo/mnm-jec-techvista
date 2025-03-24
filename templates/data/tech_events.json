@@ -1,8 +1,8 @@
 [
   {
    "id":"1",
-    "ti": "   Code Detox",
-    "act_ev": "Code Detox",
+    "ti": "Code Detox",
+    "act_ev": "Debugging event",
     "de": "Participants will debug faulty Python code across different difficulty levels.Their goal is to identify and correct errors while ensuring the code runs correctly and efficiently. ",
     "catchy_de": "Put your debugging skills to the test! Code Detox challenges you to find and fix errors in buggy Python code within a limited time. Do you have what it takes to debug like a pro?",
     "ca": "Debug, Fix, Win!",
