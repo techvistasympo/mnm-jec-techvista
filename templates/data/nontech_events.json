@@ -13,7 +13,7 @@
   },
   {
     "id": "6",
-        "ti": "   1 Min Madness",
+        "ti":        "1 Min Madness",
         "act_ev": "1 Minute Madness",
         "de": "A thrilling event with one-minute challenges that test speed, skill, and coordination.",
         "catchy_de": "Think you can beat the clock? Get ready for 1 Min Madness, where every second counts! Fun, fast, and full of excitement!",
@@ -38,7 +38,7 @@
   
   {
     "id": "8",
-    "ti": " SING & SIN 2025",
+    "ti": " SING & SIN",
     "act_ev": "SING & SIN 2025",
     "de": "Are you a music genius? SING & SIN challenges your musical knowledge like never before! Participants will be tested on their ability to recall lyrics and movie names in a fast-paced, exciting battle. When a tune plays, sing the correct lyrics—or when a song name is given, guess the movie! Quick reflexes, sharp memory, and a love for music will lead you to victory.",
     "catchy_de": "Melody or Mayhem – The Stage Decides! Test your music memory and claim the title of the ultimate music champion!",
