@@ -17,7 +17,7 @@
     visibility: hidden;
     display: block;
     
-    z-index: 15;
+    z-index: 100;
   }
   
   .pop{
@@ -73,6 +73,7 @@
     font-weight: 300;
   }
   .popc{
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -175,6 +176,7 @@
     
   }
   .hi{
+    height: 67%;
     margin-top: 2%;
   }
   .even_d_t{
@@ -208,7 +210,38 @@
   }
 
 
-
+  .boir-scrolli{
+    height: 100%;
+  }
+  .hi.scrolli {
+    overflow-y: scroll;
+    overscroll-behavior: contain;
+    
+  }
+  .hi.scrolli::-webkit-scrollbar {
+    width: 4px;
+    position: absolute;
+    z-index: 19;
+  }
+  
+  /* Track */
+  .hi.scrolli::-webkit-scrollbar-track {
+    width: 0px;
+    position: absolute;
+    background: #00000000; 
+    transition: 0.3s ease-in-out;
+  }
+   
+  /* Handle */
+  .hi.scrolli::-webkit-scrollbar-thumb {
+    background: var(--scrl1); 
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* Handle on hover */
+  .hi.scrolli::-webkit-scrollbar-thumb:hover {
+    background: var(--scrl); 
+  }
 
 @media (max-width: 1500px) {
     
@@ -227,6 +260,7 @@
     /* border: 0px; */
   }
   .popc{
+    height: unset;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -332,5 +366,10 @@
   background: var(--scrl); 
 }
 
+.hi.scrolli{
+  overflow-y: unset !important;
+}
+
 
 }
+

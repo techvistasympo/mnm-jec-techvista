@@ -1,39 +1,44 @@
 [
-  {
-    "id": "9",
-    "ti": "Free Fire",
-    "act_ev": "WAR SIMULATION",
-    "de": "main disc here",
-    "catchy_de": "In this symposium event, teams of up to two members will face a 50-minute coding challenge where they select one theme from up to 10 options revealed on the spot. Participants can choose to develop a project that integrates both front-end and back-end functionalities or focus exclusively on one aspect—either front-end or back-end. The submissions will be evaluated using separate marking.",
-    "ca": "captions",
-    "ru": "<li>● This is a team event (minimum 1 member, maximum 3 members in a team).</li><li>● Theme of the event will be <b>announced on spot.</b></li><li>● Designing prototype should be done in <b>figma</b> within a duration of <b>1 hour, and 5 mins to think over the theme.</b></li><li>● The participants should <b>bring their own devices</b> to sketch their design.</li><li>● The design should be original & <b>worked from scratch</b>.</li><li>● Plagiarism or Copy of work/template shall be prohibited.</li><li>● Decisions by the committee judges shall be final.</li>",
-    "re": "https://forms.gle/FHchmRa9gf6Le389A",
-    "co": "tel:+91904127446",
-    "po": "https://www.instagram.com/tech_vist_a"
-  },
-  {
-    "id": "9",
-    "ti": "Kings Gambit",
-    "act_ev": "Chess Tournament",
-    "de": "main disc here",
-    "catchy_de": "In this symposium event, teams of up to two members will face a 50-minute coding challenge where they select one theme from up to 10 options revealed on the spot. Participants can choose to develop a project that integrates both front-end and back-end functionalities or focus exclusively on one aspect—either front-end or back-end. The submissions will be evaluated using separate marking.",
-    "ca": "captions",
-    "ru": "<li>● This is a team event (minimum 1 member, maximum 3 members in a team).</li><li>● Theme of the event will be <b>announced on spot.</b></li><li>● Designing prototype should be done in <b>figma</b> within a duration of <b>1 hour, and 5 mins to think over the theme.</b></li><li>● The participants should <b>bring their own devices</b> to sketch their design.</li><li>● The design should be original & <b>worked from scratch</b>.</li><li>● Plagiarism or Copy of work/template shall be prohibited.</li><li>● Decisions by the committee judges shall be final.</li>",
-    "re": "https://forms.gle/FHchmRa9gf6Le389A",
-    "co": "tel:+91904127446",
-    "po": "https://www.instagram.com/tech_vist_a"
-  },
-  {
+  { 
     "id": "10",
-    "ti": "BGMI",
-    "act_ev": "BATTLE GROUNDS GAME",
-    "de": "main disc here",
-    "catchy_de": "A high-energy hackathon where participants will create innovative solutions using emerging technologies. Teams must think quickly and creatively under tight deadlines. Projects will be judged on originality, technical merit, and feasibility.",
-    "ca": "captions",
-    "ru": "<li>● Open to both individual and team participation.</li><li>● The challenge lasts 60 minutes with surprise elements introduced during the event.</li><li>● Participants must deliver a working prototype by the end of the session.</li><li>● Judging criteria include innovation, design, and functionality.</li>",
-    "re": "https://forms.gle/event2registration",
-    "co": "tel:+91904127447",
+    "ti": "BATTLE ARENA",
+    "act_ev": "FREE FIRE",
+    "de": "Gear up for the ultimate squad battle in the 'BATTLE ARENA'. This action-packed Free Fire tournament is designed for teams of four, where survival, strategy, and quick reflexes will determine the winners. Squads will drop into the map with limited ammo and no vehicles. Players must work together, gather resources, and eliminate enemies to secure the Booyah and rise to the top!",
+    "catchy_de": "Ready to dominate with your squad? Join the 'Battle Arena' for an epic Free Fire tournament! With limited ammo, no vehicles, and intense Battle Royale mode, only the most coordinated squads will rise to the top. Fight for the Booyah, rack up kills, and prove your team’s supremacy in the ultimate esports battle!",
+    "ca": "Booyah Awaits in Battle Arena!",
+    "ru": "<li><strong> Number of Rounds:</strong> 3</li><li>&nbsp;&nbsp;&nbsp;&nbsp;● Squad Battle Royale (BR Mode) – Esports Mode with Character Skills enabled.</li><br><li><strong> Description:</strong></li><li>&nbsp;&nbsp;&nbsp;&nbsp;● Squads will drop into the map with limited ammo and no vehicles. Players must work together, gather resources, and eliminate enemies to survive and secure the Booyah. The Booyah will earn 15 points for the squad, while each kill adds 2 points to the team’s total. Only the strongest squads will move on to the next round!</li><br><li><strong> Maps:</strong> Each of the three rounds will be played on a different map to test the squad’s adaptability and strategic skills.</li><br><li><strong> Scoring System:</strong></li><li>&nbsp;&nbsp;&nbsp;&nbsp;● 15 points for a Booyah.</li><li>&nbsp;&nbsp;&nbsp;&nbsp;● 2 points for each kill (per member of the squad).</li><br><li><strong> RULES:</strong></li><li>&nbsp;&nbsp;&nbsp;&nbsp;● This is a squad-based online tournament in Free Fire, played in Battle Royale mode (BR Mode).</li><li>&nbsp;&nbsp;&nbsp;&nbsp;● Each squad must consist of 4 players.</li><li>&nbsp;&nbsp;&nbsp;&nbsp;● Limited ammo and no vehicles will be in effect during the matches.</li><li>&nbsp;&nbsp;&nbsp;&nbsp;● No PC players are allowed. Only mobile players are permitted to participate.</li><li>&nbsp;&nbsp;&nbsp;&nbsp;● The tournament will consist of three rounds, and the squad with the highest points after all rounds will be crowned champions.</li><li>&nbsp;&nbsp;&nbsp;&nbsp;● Booyah gives 15 points for the squad, and each kill gives 2 points per squad member.</li><li>&nbsp;&nbsp;&nbsp;&nbsp;● No Panel and Hack will result in disqualification.</li>",
+    "re": "https://forms.gle/FHchmRa9gf6Le389A",
+    "co": "+91 9940324922",
     "po": "https://www.instagram.com/tech_vist_a"
-  }
+  },
+  {
+    
+      "id": "11",
+      "ti": "RIVALS GAMBIT",
+      "act_ev": "CHESS",
+      "de": "Prepare for an intense online chess battle in our RIVALS GAMBIT. This tournament features thrilling rounds of rapid chess, designed to test your strategic thinking and speed. Compete against fellow chess enthusiasts, showcase your skills, and claim victory in this online arena.",
+      "catchy_de": "Ready for a digital chess duel? Join 'RIVALS GAMBIT' for two rounds of strategic warfare! From calculated rapid games to lightning-fast blitz battles, only the sharpest minds will prevail. Even if you don't take home the crown, you'll experience the thrill of online competition and the joy of playing chess!",
+      "ca": "Chess: A Test of Speed & Strategy!",
+      "ru": "<li><strong> Round 1:</strong></li><li>&nbsp;&nbsp;&nbsp;&nbsp;● Rapid Rumble – Players will be paired randomly on Lichess and engage in a single rapid game. Focus on strategic planning and calculated moves to secure a win and advance to the final round.</li><br><li><strong> Round 2:</strong></li><li>&nbsp;&nbsp;&nbsp;&nbsp;● Blitz Blitzkrieg – The top performers from Round 1 will face off in a fast-paced blitz game. Quick thinking and rapid execution are crucial. One mistake can change the entire outcome.</li><br><li><strong> Extra Round (Tie-Breaker):</strong></li><li>&nbsp;&nbsp;&nbsp;&nbsp;● Bullet Battle – In case of a tie, a single bullet game will determine the ultimate champion. A test of speed and instinct.</li><br><li>● No matter who wins, this event is all about enjoying the game, testing your skills, and making online chess connections!</li><br><li>● RULES:</li><li>&nbsp;&nbsp;&nbsp;&nbsp;● This is an individual online tournament held on Lichess.org.</li><li>&nbsp;&nbsp;&nbsp;&nbsp;● Participants must have a Lichess account.</li><li>&nbsp;&nbsp;&nbsp;&nbsp;● The tournament will consist of two primary rounds: Rapid and Blitz, with a possible tie-breaker round.</li><li>&nbsp;&nbsp;&nbsp;&nbsp;● Pairings will be determined by the Lichess tournament platform.</li><li>&nbsp;&nbsp;&nbsp;&nbsp;● Players must join the Lichess team group.</li><li>&nbsp;&nbsp;&nbsp;&nbsp;● Participants must adhere to Lichess's fair play policy.</li><li>&nbsp;&nbsp;&nbsp;&nbsp;● Any form of cheating or unsportsmanlike conduct will result in disqualification.</li><li>&nbsp;&nbsp;&nbsp;&nbsp;● Judges’ decisions will be final and binding.</li><li>&nbsp;&nbsp;&nbsp;&nbsp;● Participants must join the specified Lichess tournament link at the specified time. In case of any network issues, the tournament may be conducted in offline mode.</li>",
+      "re": "https://forms.gle/FHchmRa9gf6Le389A",
+      "co": "+91 8610350530",
+      "po": "https://www.instagram.com/tech_vist_a"
+    
+  },
+  
+    {
+      "id": "12",
+      "ti": "ESPORTS - BGMI",
+      "act_ev": "Battlegrounds Mobile India (BGMI)",
+      "de": "Get ready for the ultimate battle royale showdown at TECHVISTA 2025! Compete against top squads, showcase your strategy, teamwork, and combat skills, and fight for glory and exciting prizes. Whether you're a pro or a passionate gamer, this electrifying esports event is your chance to dominate the battlegrounds!",
+      "catchy_de": "Gear up for the most thrilling BGMI tournament at TECHVISTA 2025! Compete against top squads, showcase your strategy, and battle for exciting prizes!",
+      "ca": "Battle Royale Madness!",
+      "ru": "<li><strong>Fair Play & Integrity</strong> – Any form of cheating, hacking, teaming, or exploiting game bugs/glitches is strictly prohibited and will result in immediate disqualification.</li><br><li><strong>Device Restrictions</strong> – The use of emulators, unauthorized third-party apps, or cheat tools is not allowed and will lead to disqualification.</li><br><li><strong>Respect & Sportsmanship</strong> – Players must maintain respectful conduct at all times. Abusive language, offensive usernames, inappropriate behavior, or taunting knocked-out players will result in penalties or disqualification.</li><br><li><strong>Match Conduct & Connectivity</strong> – Players are responsible for ensuring a stable internet connection. Matches will not be restarted due to individual lag, disconnections, or technical issues on a player's end.</li><br><li>Play fair, follow the rules, and enjoy the competition!</li><br>",
+  "re": "https://forms.gle/FHchmRa9gf6Le389A",
+      "co": "7448324936, 6379499603",
+      "po": "https://www.instagram.com/tech_vist_a"
+ 
+    }
+           
   
 ]
