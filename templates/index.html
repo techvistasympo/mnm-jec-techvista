@@ -574,7 +574,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                   <p>
                     {{event.catchy_de}}
                   </p>
-                  <button id="ev{{ loop.index+4 }}" onClick="reg_view(this.id)"><a>
+                  <button id="ev{{ loop.index+ length + tech_events }}" onClick="reg_view(this.id)"><a>
                     More</a>
                   </button>
               </div> 
@@ -619,7 +619,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                   <p>
                     {{event.catchy_de}}
                   </p>
-                  <button id="ev{{ loop.index+6 }}" onClick="reg_view(this.id)"><a>
+                  <button id="ev{{ loop.index+ tech_events | length + nontech_events | length }}" onClick="reg_view(this.id)"><a>
                     More</a>
                   </button>
               </div> 
@@ -744,8 +744,8 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
  Non-Technical Events</li>
         <div class="hover-show" >
           {% for event in nontech_events%}
-        <li class="pl-8 py-1" onclick='reg_view("ev{{loop.index}}",true)'><button class="events-action-btn">
-          <span id='ev{{loop.index}}-ind' class="events-action-indicator" ></span>
+        <li class="pl-8 py-1" onclick='reg_view("ev{{loop.index+ tech_events | length}}",true)'><button class="events-action-btn">
+          <span id='ev{{loop.index+ tech_events}}-ind' class="events-action-indicator" ></span>
           {{event.ti}}
         </button> </span></li>
         {%endfor%}
@@ -792,8 +792,8 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
  Online Event</li>
         <div class="hover-show" >
           {% for event in online_events%}
-          <li class="pl-8 py-1" onclick='reg_view("ev{{loop.index}}",true)'><button class="events-action-btn">
-          <span id='ev{{loop.index}}-ind' class="events-action-indicator" ></span>
+          <li class="pl-8 py-1" onclick='reg_view("ev{{loop.index+ tech_events | length + nontech_events | length}}",true)'><button class="events-action-btn">
+          <span id='ev{{loop.index+ tech_events | length + nontech_events | length}}-ind' class="events-action-indicator" ></span>
           {{event.ti}}
         </button> </span></li>
           {%endfor%}        </div>
