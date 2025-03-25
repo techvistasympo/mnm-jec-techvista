@@ -519,7 +519,9 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                   text-shadow: -0.1px -0.1px 0 cyan, 0.1px 2.1px 0 magenta;
                   padding-bottom: 21px;
                         ">
-                      <span>{{event.ti  | capitalize }}</span>
+                      <span style="
+                      text-align: center;
+                  ">{{event.ti  | capitalize }}</span>
                   </div>
 
         
@@ -527,7 +529,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
               <img loading="lazy" class="imd c" src="/static/images/block.gif">
               <div class="slogan">{{event.act_ev}}</div>
               <div class="descriptions">
-                  <h1>{{event.ti  | capitalize }}</h1>
+                  <h1>{{event.ti }}</h1>
                   <p>
                     {{event.catchy_de}}
                   </p>
@@ -562,7 +564,9 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                   text-shadow: -0.1px -0.1px 0 cyan, 0.1px 2.1px 0 magenta;
                   padding-bottom: 21px;
                         ">
-                      <span>{{event.ti  | capitalize }}</span>
+                      <span style="
+                      text-align: center;
+                  ">{{event.ti  | capitalize }}</span>
                   </div>
 
         
@@ -574,7 +578,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                   <p>
                     {{event.catchy_de}}
                   </p>
-                  <button id="ev{{ loop.index+ length + tech_events }}" onClick="reg_view(this.id)"><a>
+                  <button id="ev{{ loop.index + tech_events | length }}" onClick="reg_view(this.id)"><a>
                     More</a>
                   </button>
               </div> 
@@ -607,7 +611,9 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                   text-shadow: -0.1px -0.1px 0 cyan, 0.1px 2.1px 0 magenta;
                   padding-bottom: 21px;
                         ">
-                      <span>{{event.ti  | capitalize }}</span>
+                      <span style="
+                      text-align: center;
+                  ">{{event.ti  | capitalize }}</span>
                   </div>
 
         
@@ -1297,7 +1303,7 @@ $(document).ready(function(){
                   {% for event in all_events %}
                   case "ev{{loop.index}}":
                     history.pushState({},"","?event_id=ev{{loop.index}}");
-                    de ="{{event.de}}";
+                    de ="{{event.de | safe}}";
                     ti = "{{event.ti}}";
                     ca = "{{event.ca}}";
                     ru = "{{event.ru | safe }}";
