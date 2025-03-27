@@ -871,7 +871,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
   <a class="b1" id="reg_con" data-phn="" onclick='copyText(this.dataset.phn); alert("Contact Number Copied")'>Contact</a>
   <a class="b2" href="https://maps.app.goo.gl/sixLgtUUPkYtWvps6" target="_blank">Venue</a>
   <a class="b4" id="reg_po" href="https://www.instagram.com/t.a.l.o.s_cit" target="_blank">Poster</a>
-  <a class="b5" id="reg_sha" onclick="return copyTextFromElement();"   href="">Share</a>
+  <a class="b5" id="reg_sha"onclick="if (navigator.share) { navigator.share({ title: 'Check this out!', text: 'This is an awesome website!', url: window.location.href }).then(() => console.log('Successfully shared')).catch(error => console.error('Error sharing:', error)); } else { return copyTextFromElement(); }">Share</a>
   </div>
   
   <a class="b3" id="reg_reg" onclick="openWindow()" target="_blank">Register</a>
@@ -1359,7 +1359,6 @@ $(document).ready(function(){
                     ru = "{{event.ru | safe }}";
                     re = "{{event.re}}";   
                     co = "{{event.co}}"; //madhush
-                    li = "./event";
                     po = "{{event.po}}";
 
                     boir_closing="ev{{loop.index}}"
@@ -1375,7 +1374,6 @@ $(document).ready(function(){
                   document.getElementById('reg_rules').innerHTML = ru;
                   {# $('#reg_reg').attr('href', re); #}
                   $('#reg_con').attr('data-phn', co);  
-                  $('#reg_sha').attr('href', li);
                   $('#reg_po').attr('href', po);
 
                   
